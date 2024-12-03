@@ -6,20 +6,19 @@ slug: /
 ---
 
 
-# The OpenJS Foundation Security Compliance Guide v1.0 <span style={{backgroundColor: '#ff6f3c', color: 'white', padding: '2px 6px'}}>DRAFT</span>
-
+# The OpenJS Foundation Security Compliance Guide v1.0
 
 ## Executive Summary
 
-
 ### Background
 
-Since 2020, the number of actively exploited security vulnerabilities in open source software (OSS) has significantly increased, along with attacks on core software supply chain infrastructure and individual community members. Awareness of the heightened threat environment has led to substantial responses from software consumers and regulators:
+Since 2020, the number of actively exploited security vulnerabilities in open source software (OSS) has significantly increased, along with attacks on core software supply chain infrastructure and individual community members. Awareness of the heightened threat environment has led to substantial responses from software consumers and regulators.
 
 - The United States, European Union, and other nation states are actively funding efforts to build the modern institutional functions needed to regulate the software supply chains and inclusion of OSS in software they procure.
 - Commercial software vendors have responded to regulator and customer awareness of their Software Supply Chain Security risks and ubiquitous use of OSS by increasingly funding and formalizing internal DevOps, Cybersecurity Supply Chain Risk Management (C-SCRM), and Open Source Program Office (OSPO) initiatives.
 - A new generation of Application Security startups have raised VC funding to support these emerging initiatives. With the promise of regulator-induced demand Software Supply Chain Security, Software Bill of Materials (SBOM), and OSPO products achieved the same Peak status as Generative AI in the 2023 Gartner Hype Cycle.
 - Large commercial consumers of OSS, and more recently governments, have funded new and existing non-profit infrastructure to support defining best practices, tool development, and selectively engaging with maintainers to improve the security posture of their projects. Newer software supply chain security startups are sometimes engaged in these non-profit activities by open sourcing and integrating parts of their tool chains.
+
 
 ### Observations
 
@@ -28,16 +27,27 @@ Since 2020, the number of actively exploited security vulnerabilities in open so
 The OSS community’s response to these trends and the expectations thrust upon them by their newfound criticality in national security and for-profit business risk assessments have varied.
 
 Observations and research strongly signal that a majority of maintainers have an accurate understanding of their threat environment, desire to proactively protect themselves, and value external support and guidance that tangibly improves their security posture. However, they are generally allergic to dedicating personal time implementing security controls that appear to satisfy low impact checkbox compliance rules without a locally relevant attack chain (“security theater”) or the risk management interests of commercial OSS consumers.
-- Congratulations: We Now Have Opinions on Your Open Source Contributions
-- OpenSSF Maintainer Experiences Lessons Learned
-- Atlantic Council Research on Paying Maintainers
-- <More…>
+
+- [Congratulations: We Now Have Opinions on Your Open Source Contributions](https://lucumr.pocoo.org/2022/7/9/congratulations/)
+- [OpenSSF Maintainer Experiences Lessons Learned](https://github.com/ossf/tac/issues/169)
+- [Atlantic Council Research on Paying Maintainers](https://dfrlab.org/2024/04/18/more-money-better-security/)
+
 
 #### Prior Art
 
 There exist countless cybersecurity and software security best practices, maturity models, and standards for commercial software developers. Most of these are intended for internal use and assume facilitation by dedicated security practitioners in full time equivalent roles. Others are intended to provide their customers a standard way of measuring security program completeness and efficacy via a 3rd party audit.
 
 There are few equivalents designed for OSS maintainers today. Those that exist often combine OSS project health, legal compliance, and technical security concepts together into a single score or maturity model for community and industry audiences. This choice fills a very real market need, but is not without controversy and appears at times to distract from the important work of implementing and celebrating incremental security posture improvements.
+
+Sources for Guidelines include:
+- [CNCF Cloud Native Security Whitepaper](https://github.com/cncf/tag-security/blob/main/security-whitepaper/v2/cloud-native-security-whitepaper.md)
+- [CNCF Software Supply Chain Best Practices](https://github.com/cncf/tag-security/blob/main/supply-chain-security/supply-chain-security-paper/sscsp.md)
+- [OpenSSF Best Practices Badge](https://www.bestpractices.dev/en/criteria)
+- [OpenSSF Scorecard](https://github.com/ossf/scorecard/blob/main/docs/checks.md)
+- [OpenSSF Source Code Management Best Practices](https://best.openssf.org/SCM-BestPractices)
+- [OWASP SCVS](https://scvs.owasp.org/scvs/)
+- Various npm and GitHub documentation
+
 
 ### Approach
 
@@ -66,44 +76,31 @@ Multiple open source and proprietary OSS project health measurement systems exis
 
 - Security architecture and feature hardening best practices
 
-This Standard does not address secure design and defense-in-depth feature hardening concepts. In their most useful form, these best practices are specific to the frameworks used. Examples include Node.js' Security Best Practices and Electron's Security Best Practices.
-
-## Assumptions
-
-### Vulnerability Management
-
-This Standard assumes projects do not have the time, application security expertise, or budget for the commercial tooling needed to consistently perform exploitability analysis for vulnerabilities in their transitive dependencies. For this reason, it Expects projects to refresh their dependencies at least every six months. The Standard Expects exploitable vulnerabilities in direct dependencies to be remediated within defined SLAs.
-
-### Insider Threat
-
-- **Unintentional:** This Standard offers numerous guidelines to address this risk. Most can be found in the various Authentication and Permissions sections.
-- **Intentional:** Most OSS project health systems attempt to infer and score this risk via automated measurement of how well the project enforces the four eyes principle (1 author + 1 reviewer). OpenSSF Scorecard goes further and penalizes projects unable to demonstrate an ability to implement six eyes reviews (1 author + 2 reviewers).
-
-However, the vast majority of npm packages have only one maintainer, including several OpenJS Projects. A review of OpenSSF’s internal discussion on this topic reveals the questionable real-world security value of how these checks are implemented and scored.
-
-Unfortunately, many industry standard controls to manage Insider Threat risks remain out of reach to most OSS due to their voluntary nature and a lack of funding. Examples of common Unintentional and Intentional Insider Threat controls include dedicated engineering devices, installation of commercial Detection and Response (D&R) suites, monitoring of Threat Intelligence feeds, configuration change control monitoring, and the dedicated IT staff needed to establish a separation of duties that can be trusted to enforce secure configuration and change management processes.
-
-### Dependency Inventory, Management, and Software Bills of Materials (SBOM)
-
-The purpose of an SBOM is to provide software consumers an accurate list of third party dependencies included in a given software product. OpenJS supports the creation of SBOMs when they can be trusted to be consistently accurate. Efforts to increase publication of SBOMs are critically important in the context of compiled languages and closed source software.
-
-In the case of JavaScript, and in particular the Node.js and npm ecosystems, research has demonstrated that SBOMs generated by npm and other tools for JavaScript libraries [are not and cannot be made accurately](https://blog.deps.dev/zillions-of-sboms/). The root cause of this gap is npm’s method of resolving dependency conflicts, which should be expected by software consumers to produce wildly different sets of dependencies depending on the other libraries used in a given application. 
-
-Thus, the mass generation of SBOMs for individual JavaScript libraries in npm may actually be _worse_ than not publishing an SBOM at all. If this Standard were to Expect individual libraries to publish SBOMs that cannot, and will never, represent the dependencies used in an application used by software consumers, we risk polluting the ecosystem of SBOM tools with bad data. This Standard recommends that freestanding OpenJS JavaScript applications publish an SBOM.
-
-For OpenJS projects that are libraries, this Standard Expects them to perform dependency inventorying and management to evaluate their use of dependencies holistically.
+This Standard does not address secure design and defense-in-depth feature hardening concepts. In their most useful form, these best practices are specific to the frameworks used. Examples include [Node.js' Security Best Practices](https://nodejs.org/en/learn/getting-started/security-best-practices) and [Electron's Security Best Practices](https://www.electronjs.org/docs/latest/tutorial/security).
 
 ## How to Use the Standard
 
-This Standard is designed to be used by three different types of OpenJS Foundation Projects:
-
-
-- Incubating Projects
-    - For use as part of their process to graduate into an Active Project.
-- Active Projects (eg: At Large and Impact)
-    - For use as part of their own processes to mature and maintain their security posture.
-- Retiring Projects (eg: Emeritus Projects)
-    - For use as part of the process to wind down and end support for an Active Project in order to establish a durable, long-term baseline.
+The Standard is organized around three concepts:
+- Categories that organize the different types of Guidelines by security domain:
+    1. User Authentication
+    2. User Account Permissions
+    3. Service Authentication
+    4. Github Workflows
+    5. Vulnerability Management
+    6. Coordinated Vulnerability Disclosure
+    7. Code Quality
+    8. Code Review
+    9. Source Control
+    10. Dependency Inventory
+    11. Dependency Management
+- Priority Groups that break up the 72 Guidelines into 22 smaller, sequenced chunks of work. Maintainers can use the Priority Groups to prioritize, sequence, and establish milestones to communicate and celebrate incremental security successes.
+- Applicability of the Guideline based on the Project’s Status in OpenJS’ Project Lifecycle:
+    - Incubating Projects
+        - For use as part of their processes  to mature and maintain their security posture to graduate into an Active Project.
+    - Active Projects (eg: At Large and Impact)
+        - For use as part of their own processes to mature and maintain their security posture.
+    - Retiring Projects (eg: Emeritus Projects)
+        - For use when winding down and ending support for an Active Project in order to establish a durable, long-term baseline security posture.
 
 These Project types represent very different phases of an OSS project’s lifecycle, including their process maturity and available resources. To acknowledge these potentially enormous variances, for each Project type and Item, the Standard offers four different types of Guidance:
 
@@ -120,4 +117,3 @@ These Project types represent very different phases of an OSS project’s lifecy
         - Low real-world security impact
 - Not Applicable (N/A)
     - This Guidance is reserved for Items that are no longer relevant for Projects once they are formally Retired.
-
