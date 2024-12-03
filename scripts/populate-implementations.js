@@ -30,7 +30,7 @@ standards.forEach(item =>
 const addHeader = () => `
 | Section | Item | Priority Group | Details |
 | --- | --- | --- | --- |`
-const addRow = (item) => `| ${item.section} | ${item.item} | ${item['priority group']} | [details](/details/${item.id}) |`
+const addRow = (item) => `| ${item.section} | ${item.title} | ${item['priority group']} | [details](/details/${item.slug}) |`
 
 // Prepare the markdown files
 projectStatus.forEach((status, index) => {

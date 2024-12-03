@@ -14,12 +14,12 @@ const addContent = (content) => {
 standards.forEach((item, index) => {
   const fileContent = `---
 sidebar_position: ${index + 1}
-id: ${item.id}
-title: ${item.id.charAt(0).toUpperCase() + item.id.slice(1)}
-slug: /details/${item.id}
+id: ${item.slug}
+title: ${item.title}
+slug: /details/${item.slug}
 ---
 
-# ${item.id.charAt(0).toUpperCase() + item.id.slice(1)}
+# ${item.title}
 
 ## Use Case
 
@@ -29,7 +29,7 @@ slug: /details/${item.id}
 
 ## Description
 
-${item.item}
+${item.description}
 
 ## Details
 
@@ -40,6 +40,6 @@ ${item.item}
 - How To: ${addContent(item['how to'])}
 
 `
-  const detination = path.join(process.cwd(), `docs/details/${item.id}.mdx`)
+  const detination = path.join(process.cwd(), `docs/details/${item.slug}.mdx`)
   writeFileSync(detination, fileContent)
 })
