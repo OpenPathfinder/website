@@ -44,8 +44,8 @@ This command generates static content into the `build` directory and can be serv
 1. Go to https://docs.google.com/spreadsheets/d/1GwIsAudAn89xv9DAbr1HUaY4KEVBsYfg--_1cW0uIB0/edit?gid=0#gid=0
 2. Update the items
 3. Download the sheet as HTML
-4. Replace the content of `docs/standards.html` with the new content
-5. Run the script `npm run extract-standards` to extract the items from the HTML and update the `standards.json` file
+4. Replace the content of `data/standards.html` with the new content
+5. Run the script `npm run extract-standards` to extract the items from the HTML and update the `data/standards.json` file
 
 ### Update the website
 
