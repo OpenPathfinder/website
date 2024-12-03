@@ -10,59 +10,59 @@ slug: /implementations/active
 
 | Section | Item | Priority Group | Details |
 | --- | --- | --- | --- |
-| 7. Code Quality | At least One Primary Maintainer has taken TBD Training on Secure Software Design | 0 | [details](/details/item-0) |
-| 7. Code Quality | At least One Primary Maintainer has taken TBD Training on OWASP Top 10 or Equivalent | 0 | [details](/details/item-1) |
-| 1. User Authentication | Multi Factor Authentication (MFA) Enforced Across the Github Organization | 1 | [details](/details/item-2) |
-| 1. User Authentication | Multi Factor Authentication (MFA) Enforced Across the npm Organization | 1 | [details](/details/item-3) |
-| 1. User Authentication | Multi Factor Authentication (MFA) Enforced in All Tools Wherever Techncially Feasible | 1 | [details](/details/item-4) |
-| 1. User Authentication | Use Multi Factor Authentication (MFA) Methods that Defend Against Impersonation when Available  | 1 | [details](/details/item-5) |
-| 3. Service Authentication | No Secrets and Credentials in Source Code | 2 | [details](/details/item-6) |
-| 3. Service Authentication | Secrets are injected at runtime, such as environment variables or as a file (eg: use Github Secrets) | 2 | [details](/details/item-7) |
-| 7. Code Quality | All Commits are Scanned for Secrets and Credentials  | 2 | [details](/details/item-8) |
-| 7. Code Quality | New Commits Containing Secrets or Credentials are Blocked from Merging | 2 | [details](/details/item-9) |
-| 1. User Authentication | Use SSH keys for developer access to source code repositories and use a passphrase | 3 | [details](/details/item-10) |
-| 3. Service Authentication | Publish to npm using an MFA-enabled account rather than single factor legacy or granular access tokens | 3 | [details](/details/item-11) |
-| 3. Service Authentication | Github Webhooks Use Secrets | 3 | [details](/details/item-12) |
-| 2. User Account Permissions | Default Github Org Member Permissions Should Be Restricted | 4 | [details](/details/item-13) |
-| 2. User Account Permissions | Only Admins Should Be Able To Create Public Repositories | 4 | [details](/details/item-14) |
-| 2. User Account Permissions | [For Projects with Two or more Admins] Do not allow Admins to Bypass Branch Protection Settings | 4 | [details](/details/item-15) |
-| 2. User Account Permissions | Define roles aligned to functional responsibilities | 4 | [details](/details/item-16) |
-| 2. User Account Permissions | Define Individuals/Teams who Write Access to a Github Repo | 4 | [details](/details/item-17) |
-| 2. User Account Permissions | [For Projects with Two or more Owners] Have at least Two Owners Configured for Access Continuity | 4 | [details](/details/item-18) |
-| 5. Vulnerability Management | Actively Exploited Critical Vulnerabilities Patched within 30 Days | 5 | [details](/details/item-19) |
-| 5. Vulnerability Management | Non-Critical Exploitable Vulnerabilities Patched within 90 Days | 5 | [details](/details/item-20) |
-| 11. Dependency Management | An automated process to identify dependencies with publicly disclosed vulnerabilities | 6 | [details](/details/item-21) |
-| 7. Code Quality | Use an Automated Static Code Analysis Tool (eg: ESLInt) | 6 | [details](/details/item-22) |
-| 7. Code Quality | Compilers/Linter Warnings Addressed in order to Merge | 6 | [details](/details/item-23) |
-| 7. Code Quality | All Commits are Scanned by a Static Application Security Testing Tool | 6 | [details](/details/item-24) |
-| 7. Code Quality | All Required Commit Status Checks must pass before Merging | 6 | [details](/details/item-25) |
-| 7. Code Quality | Security.md Meets OpenJS CVD Guidelines  | 7 | [details](/details/item-26) |
-| 6. Coordinated Vulnerability Disclosure | Project Leverages a CVD Tool to Privately Receive/Manage External Vulnerability Reports (eg: H1/GH PVR) | 7 | [details](/details/item-27) |
-| 6. Coordinated Vulnerability Disclosure | All External Vulnerability Reports Responded to <14 Days | 7 | [details](/details/item-28) |
-| 6. Coordinated Vulnerability Disclosure | Establish a Clear Communication and Incident Response Plan | 7 | [details](/details/item-29) |
-| 6. Coordinated Vulnerability Disclosure | All Known Security Vulnerabilities are Issued a CVE | 7 | [details](/details/item-30) |
-| 6. Coordinated Vulnerability Disclosure | Release Notes must Include the CVE ID of Patched Security Vulnerabilities | 7 | [details](/details/item-31) |
-| 7. Code Quality | Regression Tests for => 50% of Bugs and 100% of Security Vulns | 8 | [details](/details/item-32) |
-| 4. Github Workflow Permissions | Github Org Default Workflow Token Permissions are Set to Read Only | 9 | [details](/details/item-33) |
-| 4. Github Workflow Permissions | Workflows are not Allowed To Create or Approve Pull Requests | 9 | [details](/details/item-34) |
-| 9. Source Control | Prevent Force Push on Default Branch | 9 | [details](/details/item-35) |
-| 9. Source Control | Prevent Default Branch Deletion | 9 | [details](/details/item-36) |
-| 9. Source Control | Default Branch must be Up to Date before Merging | 9 | [details](/details/item-37) |
-| 4. Github Workflow Permissions | GitHub Organization Secrets are Restricted to Selected Repositories | 10 | [details](/details/item-38) |
-| 4. Github Workflow Permissions | GitHub Actions Should Be Limited To Verified or Explicitly Trusted Actions | 10 | [details](/details/item-39) |
-| 4. Github Workflows | Disable use of Self-Hosted Runners in Github Org | 10 | [details](/details/item-40) |
-| 4. Github Workflows | Build Pipeline Cannot Execute Arbitrary Code from Outside of a Build Script | 11 | [details](/details/item-41) |
-| 4. Github Workflows | Only Allow Workflows Write Permissions at the Job-Level | 11 | [details](/details/item-42) |
-| 4. Github Workflows | Avoid Script Injection from Untrusted Context Variables | 11 | [details](/details/item-43) |
-| 4. Github Workflow Permissions | Consistent and Automated Build Process is Documented and Used | 12 | [details](/details/item-44) |
-| 5. Vulnerability Management | Commonly Used Older Versions Supported or Upgrade Path Provided/Documented | 12 | [details](/details/item-45) |
-| 8. Code Review | [For Projects with Two or more Maintainers] Document Software Architecture | 12 | [details](/details/item-46) |
-| 9. Source Control | CI/CD steps should all be automated through a pipeline defined as code | 12 | [details](/details/item-47) |
-| 4. Github Workflows | Pin Actions with Access to Secrets to a Full Length Commit SHA | 13 | [details](/details/item-48) |
-| 10. Dependency Inventory | Automated Process is Used to Monitor for and Maintain a List of Out of Date Dependencies | 14 | [details](/details/item-49) |
-| 10. Dependency Inventory | [Freestanding Applications Only] A Machine Readable List of all Direct and Transitive Dependencies is Available for the Software | 14 | [details](/details/item-50) |
-| 10. Dependency Inventory | Modified dependencies are uniquely identified and distinct from origin dependency | 14 | [details](/details/item-51) |
-| 5. Vulnerability Management | A new release to refresh dependencies occurs at least annually | 14 | [details](/details/item-52) |
+| 7. Code Quality | Training on Secure Software Design | P0 | [details](/details/softwareDesignTraining) |
+| 7. Code Quality | Training on OWASP Top 10 or Equivalent | P0 | [details](/details/owaspTop10Training) |
+| 1. User Authentication | Enforce MFA in GitHub Organization(s) | P1 | [details](/details/githubOrgMFA) |
+| 1. User Authentication | Enforce MFA in npm Organization(s) | P1 | [details](/details/npmOrgMFA) |
+| 1. User Authentication | Enforce MFA in all the tools | P1 | [details](/details/orgToolingMFA) |
+| 1. User Authentication | Use MFA against impersonation | P1 | [details](/details/MFAImpersonationDefense) |
+| 3. Service Authentication | Check sensitive information | P2 | [details](/details/noSensitiveInfoInRepositories) |
+| 3. Service Authentication | Ensure that the secrets are injected at runtime | P2 | [details](/details/injectedSecretsAtRuntime) |
+| 7. Code Quality | Ensure that all the commits are scanned | P2 | [details](/details/scanCommitsForSensitiveInfo) |
+| 7. Code Quality | Block New Commits with Secrets or Credentials | P2 | [details](/details/preventLandingSensitiveCommits) |
+| 1. User Authentication | Use SSH Keys with Passphrases for Repository Access | P3 | [details](/details/SSHKeysRequired) |
+| 3. Service Authentication | Publish to npm Using MFA-Enabled Accounts | P3 | [details](/details/npmPublicationMFA) |
+| 3. Service Authentication | Secure GitHub Webhooks with Secrets | P3 | [details](/details/githubWebhookSecrets) |
+| 2. User Account Permissions | Restrict Default GitHub Org Member Permissions | P4 | [details](/details/restrictedOrgPermissions) |
+| 2. User Account Permissions | Allow Only Admins to Create Public Repositories | P4 | [details](/details/adminRepoCreationOnly) |
+| 2. User Account Permissions | Prevent Admins from Bypassing Branch Protection | P4 | [details](/details/preventBranchProtectionBypass) |
+| 2. User Account Permissions | Define Roles Aligned to Functional Responsibilities | P4 | [details](/details/defineFunctionalRoles) |
+| 2. User Account Permissions | Define Teams/Individuals with Write Access to Repositories | P4 | [details](/details/githubWriteAccessRoles) |
+| 2. User Account Permissions | Configure Two or more Owners for Access Continuity | P4 | [details](/details/twoOrMoreOwnersForAccess) |
+| 5. Vulnerability Management | Patch Actively Exploited Critical Vulnerabilities within 30 Days | P5 | [details](/details/patchCriticalVulns30Days) |
+| 5. Vulnerability Management | Patch Non-Critical Vulnerabilities within 90 Days | P5 | [details](/details/patchNonCriticalVulns90Days) |
+| 11. Dependency Management | Automate Dependency Vulnerability Identification | P6 | [details](/details/automateVulnDetection) |
+| 7. Code Quality | Use Automated Static Code Analysis Tools | P6 | [details](/details/staticCodeAnalysis) |
+| 7. Code Quality | Address Compiler/Linter Warnings Before Merging | P6 | [details](/details/resolveLinterWarnings) |
+| 7. Code Quality | Use Static Application Security Testing for All Commits | P6 | [details](/details/staticAppSecTesting) |
+| 7. Code Quality | Require Commit Status Checks to Pass Before Merging | P6 | [details](/details/commitStatusChecks) |
+| 6. Coordinated Vulnerability Disclosure | Ensure Security.md Meets OpenJS CVD Guidelines | P7 | [details](/details/securityMdMeetsOpenJSCVD) |
+| 6. Coordinated Vulnerability Disclosure | Use CVD Tools to Manage Vulnerability Reports | P7 | [details](/details/useCVDToolForVulns) |
+| 6. Coordinated Vulnerability Disclosure | Respond to External Vulnerability Reports in Under 14 Days | P7 | [details](/details/vulnResponse14Days) |
+| 6. Coordinated Vulnerability Disclosure | Define Clear Communication and Incident Response Plans | P7 | [details](/details/incidentResponsePlan) |
+| 6. Coordinated Vulnerability Disclosure | Assign CVEs to All Known Security Vulnerabilities | P7 | [details](/details/assignCVEForKnownVulns) |
+| 6. Coordinated Vulnerability Disclosure | Include CVE IDs in Release Notes for Security Fixes | P7 | [details](/details/includeCVEInReleaseNotes) |
+| 7. Code Quality | Create Regression Tests for Bugs and Security Vulnerabilities | P8 | [details](/details/regressionTestsForVulns) |
+| 4. Github Workflow Permissions | Set Default GitHub Workflow Token Permissions to Read Only | P9 | [details](/details/defaultTokenPermissionsReadOnly) |
+| 4. Github Workflow Permissions | Prevent Workflows from Creating or Approving PRs | P9 | [details](/details/blockWorkflowPRApproval) |
+| 9. Source Control | Disable Force Push on Default Branch | P9 | [details](/details/noForcePushDefaultBranch) |
+| 9. Source Control | Prevent Deletion of Default Branch | P9 | [details](/details/preventDeletionDefaultBranch) |
+| 9. Source Control | Require Default Branch Updates Before Merging | P9 | [details](/details/upToDateDefaultBranchBeforeMerge) |
+| 4. Github Workflows | Restrict GitHub Org Secrets to Specific Repositories | P10 | [details](/details/restrictOrgSecrets) |
+| 4. Github Workflows | Limit GitHub Actions to Verified or Trusted Actions | P10 | [details](/details/verifiedActionsOnly) |
+| 4. Github Workflows | Disable Self-Hosted Runners in GitHub Org | P10 | [details](/details/noSelfHostedRunners) |
+| 4. Github Workflows | Restrict Build Pipeline Code Execution to Build Scripts | P11 | [details](/details/noArbitraryCodeInPipeline) |
+| 4. Github Workflows | Limit Workflow Write Permissions to Job-Level | P11 | [details](/details/limitWorkflowWritePermissions) |
+| 4. Github Workflows | Avoid Script Injection from Untrusted Variables | P11 | [details](/details/preventScriptInjection) |
+| 4. Github Workflows | Document Consistent and Automated Build Processes | P12 | [details](/details/consistentBuildProcessDocs) |
+| 5. Vulnerability Management | Support Older Versions or Provide Upgrade Paths | P12 | [details](/details/upgradePathDocs) |
+| 8. Code Review | Document Software Architecture | P12 | [details](/details/softwareArchitectureDocs) |
+| 9. Source Control | Automate CI/CD Steps in Code-Based Pipelines | P12 | [details](/details/ciAndCdPipelineAsCode) |
+| 4. Github Workflows | Pin Actions with Secrets to Full-Length Commit SHAs | P13 | [details](/details/pinActionsToSHA) |
+| 10. Dependency Inventory | Automate Monitoring of Outdated Dependencies | P14 | [details](/details/automateDependencyManagement) |
+| 10. Dependency Inventory | Provide Machine-Readable Dependency Lists | P14 | [details](/details/machineReadableDependencies) |
+| 10. Dependency Inventory | Uniquely Identify Modified Dependencies | P14 | [details](/details/identifyModifiedDependencies) |
+| 5. Vulnerability Management | Refresh Dependencies with Annual Releases | P14 | [details](/details/annualDependencyRefresh) |
     
 
 
@@ -70,23 +70,23 @@ slug: /implementations/active
 
 | Section | Item | Priority Group | Details |
 | --- | --- | --- | --- |
-| 1. User Authentication | Github.com: Use a passkey (AAL2) or hardware key (AAL3) that activates using a password or biometrics | Rec 1 | [details](/details/item-53) |
-| 1. User Authentication | Non-Interactive Github: Use a passkey (AAL2) or hardware key (AAL3) that activates using a password or biometrics | Rec 1 | [details](/details/item-54) |
-| 1. User Authentication | All Other Contexts: Use a passkey (AAL2) or hardware key (AAL3) that activates using a password or biometrics | Rec 1 | [details](/details/item-55) |
-| 4. Github Workflows | Limit changes from forks to workflows by requiring approval for all outside collaborators | Rec 2 | [details](/details/item-56) |
-| 4. Github Workflows | Use a Workflow Security Scanner | Rec 2 | [details](/details/item-57) |
-| 4. Github Workflows | Use a Github Runner Security Scanner | Rec 2 | [details](/details/item-58) |
-| 2. User Account Permissions | Github Organization Admins Should Have Activity In The Last 6 Months | Rec 3 | [details](/details/item-59) |
-| 2. User Account Permissions | Github Organization Members with Write Permissions Should Have Activity In The Last 6 Months | Rec 3 | [details](/details/item-60) |
-| 9. Source Control | Require Pull Requests before Merging | Rec 4 | [details](/details/item-61) |
-| 9. Source Control | Github Org Requires Commit Signoff for Web-Based Commits | Rec 4 | [details](/details/item-62) |
-| 9. Source Control | Require Signed Commits | Rec 4 | [details](/details/item-63) |
-| 10. Dependency Inventory | [Freestanding Applications Only] Commit a package-lock.json file with each release | Rec 5 | [details](/details/item-64) |
-| 8. Code Review | [For Projects with Two or more Maintainers] Require Two Party Review | Rec 6 | [details](/details/item-65) |
-| 8. Code Review | [For Projects with Four or more Maintainers] Require Code Owners Review | Rec 6 | [details](/details/item-66) |
-| 9. Source Control | [For Projects with Two or more Maintainers] Require Approved PRs for all commits to mainline branches | Rec 6 | [details](/details/item-67) |
-| 2. User Account Permissions | Limit Number of Github Org Owners (ideally Fewer Than Three) | Rec 7 | [details](/details/item-68) |
-| 2. User Account Permissions | Limit Number of Github Repository Admins (ideally Fewer Than Three) | Rec 7 | [details](/details/item-69) |
-| 5. Vulnerability Management | Actively Exploited Critical and High Vulnerabilities Patched within 14 Days | Rec 8 | [details](/details/item-70) |
-| 5. Vulnerability Management | Non-Critical Expoitable Vulnerabilities Patched within 60 Days | Rec 8 | [details](/details/item-71) |
+| 1. User Authentication | Use AAL2/3 Passkeys for GitHub Access | R1 | [details](/details/useHwKeyGithubAccess) |
+| 1. User Authentication | Use AAL2/3 Passkeys for Non-Interactive GitHub Access | R1 | [details](/details/useHwKeyGithubNonInteractive) |
+| 1. User Authentication | Use AAL2/3 Passkeys in All Other Contexts | R1 | [details](/details/useHwKeyOtherContexts) |
+| 4. Github Workflows | Require Approval for Forked Workflow Changes | R2 | [details](/details/forkWorkflowApproval) |
+| 4. Github Workflows | Use Workflow Security Scanners | R2 | [details](/details/workflowSecurityScanner) |
+| 4. Github Workflows | Use GitHub Runner Security Scanners | R2 | [details](/details/runnerSecurityScanner) |
+| 2. User Account Permissions | Require Active Admins in GitHub Org (Activity in 6 Months) | R3 | [details](/details/activeAdminsSixMonths) |
+| 2. User Account Permissions | Require Active Members with Write Access (Activity in 6 Months) | R3 | [details](/details/activeWritersSixMonths) |
+| 9. Source Control | Require Pull Requests Before Merging | R4 | [details](/details/PRsBeforeMerge) |
+| 9. Source Control | Enforce Commit Signoff for Web-Based Commits | R4 | [details](/details/commitSignoffForWeb) |
+| 9. Source Control | Require Signed Commits | R4 | [details](/details/requireSignedCommits) |
+| 10. Dependency Inventory | Include package-lock.json in Releases (Freestanding Apps) | R5 | [details](/details/includePackageLock) |
+| 8. Code Review | Require Two-Party Review (Two+ Maintainers) | R6 | [details](/details/requireTwoPartyReview) |
+| 8. Code Review | Require Code Owners Review (Four+ Maintainers) | R6 | [details](/details/requireCodeOwnersReviewForLargeTeams) |
+| 9. Source Control | Require Approved PRs for Mainline Commits (Two+ Maintainers) | R6 | [details](/details/requirePRApprovalForMainline) |
+| 2. User Account Permissions | Limit GitHub Org Owners to Fewer Than Three | R7 | [details](/details/limitOrgOwners) |
+| 2. User Account Permissions | Limit GitHub Repo Admins to Fewer Than Three | R7 | [details](/details/limitRepoAdmins) |
+| 5. Vulnerability Management | Patch Critical/High Vulnerabilities in 14 Days | R8 | [details](/details/patchExploitableHighVulns14Days) |
+| 5. Vulnerability Management | Patch Non-Critical Vulnerabilities in 60 Days | R8 | [details](/details/patchExploitableNoncCriticalVulns60Days) |
     

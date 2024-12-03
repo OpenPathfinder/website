@@ -10,38 +10,38 @@ slug: /implementations/retiring
 
 | Section | Item | Priority Group | Details |
 | --- | --- | --- | --- |
-| 7. Code Quality | At least One Primary Maintainer has taken TBD Training on Secure Software Design | 0 | [details](/details/item-0) |
-| 7. Code Quality | At least One Primary Maintainer has taken TBD Training on OWASP Top 10 or Equivalent | 0 | [details](/details/item-1) |
-| 1. User Authentication | Multi Factor Authentication (MFA) Enforced Across the Github Organization | 1 | [details](/details/item-2) |
-| 1. User Authentication | Multi Factor Authentication (MFA) Enforced Across the npm Organization | 1 | [details](/details/item-3) |
-| 1. User Authentication | Multi Factor Authentication (MFA) Enforced in All Tools Wherever Techncially Feasible | 1 | [details](/details/item-4) |
-| 1. User Authentication | Use Multi Factor Authentication (MFA) Methods that Defend Against Impersonation when Available  | 1 | [details](/details/item-5) |
-| 3. Service Authentication | No Secrets and Credentials in Source Code | 2 | [details](/details/item-6) |
-| 3. Service Authentication | Secrets are injected at runtime, such as environment variables or as a file (eg: use Github Secrets) | 2 | [details](/details/item-7) |
-| 1. User Authentication | Use SSH keys for developer access to source code repositories and use a passphrase | 3 | [details](/details/item-10) |
-| 3. Service Authentication | Publish to npm using an MFA-enabled account rather than single factor legacy or granular access tokens | 3 | [details](/details/item-11) |
-| 3. Service Authentication | Github Webhooks Use Secrets | 3 | [details](/details/item-12) |
-| 2. User Account Permissions | Default Github Org Member Permissions Should Be Restricted | 4 | [details](/details/item-13) |
-| 2. User Account Permissions | Only Admins Should Be Able To Create Public Repositories | 4 | [details](/details/item-14) |
-| 2. User Account Permissions | [For Projects with Two or more Admins] Do not allow Admins to Bypass Branch Protection Settings | 4 | [details](/details/item-15) |
-| 2. User Account Permissions | Define roles aligned to functional responsibilities | 4 | [details](/details/item-16) |
-| 2. User Account Permissions | Define Individuals/Teams who Write Access to a Github Repo | 4 | [details](/details/item-17) |
-| 2. User Account Permissions | [For Projects with Two or more Owners] Have at least Two Owners Configured for Access Continuity | 4 | [details](/details/item-18) |
-| 11. Dependency Management | An automated process to identify dependencies with publicly disclosed vulnerabilities | 6 | [details](/details/item-21) |
-| 7. Code Quality | Security.md Meets OpenJS CVD Guidelines  | 7 | [details](/details/item-26) |
-| 6. Coordinated Vulnerability Disclosure | Project Leverages a CVD Tool to Privately Receive/Manage External Vulnerability Reports (eg: H1/GH PVR) | 7 | [details](/details/item-27) |
-| 6. Coordinated Vulnerability Disclosure | Establish a Clear Communication and Incident Response Plan | 7 | [details](/details/item-29) |
-| 6. Coordinated Vulnerability Disclosure | All Known Security Vulnerabilities are Issued a CVE | 7 | [details](/details/item-30) |
-| 6. Coordinated Vulnerability Disclosure | Release Notes must Include the CVE ID of Patched Security Vulnerabilities | 7 | [details](/details/item-31) |
-| 4. Github Workflow Permissions | Workflows are not Allowed To Create or Approve Pull Requests | 9 | [details](/details/item-34) |
-| 9. Source Control | Prevent Force Push on Default Branch | 9 | [details](/details/item-35) |
-| 9. Source Control | Prevent Default Branch Deletion | 9 | [details](/details/item-36) |
-| 9. Source Control | Default Branch must be Up to Date before Merging | 9 | [details](/details/item-37) |
-| 4. Github Workflows | Disable use of Self-Hosted Runners in Github Org | 10 | [details](/details/item-40) |
-| 4. Github Workflows | Only Allow Workflows Write Permissions at the Job-Level | 11 | [details](/details/item-42) |
-| 10. Dependency Inventory | Automated Process is Used to Monitor for and Maintain a List of Out of Date Dependencies | 14 | [details](/details/item-49) |
-| 10. Dependency Inventory | [Freestanding Applications Only] A Machine Readable List of all Direct and Transitive Dependencies is Available for the Software | 14 | [details](/details/item-50) |
-| 10. Dependency Inventory | Modified dependencies are uniquely identified and distinct from origin dependency | 14 | [details](/details/item-51) |
+| 7. Code Quality | Training on Secure Software Design | P0 | [details](/details/softwareDesignTraining) |
+| 7. Code Quality | Training on OWASP Top 10 or Equivalent | P0 | [details](/details/owaspTop10Training) |
+| 1. User Authentication | Enforce MFA in GitHub Organization(s) | P1 | [details](/details/githubOrgMFA) |
+| 1. User Authentication | Enforce MFA in npm Organization(s) | P1 | [details](/details/npmOrgMFA) |
+| 1. User Authentication | Enforce MFA in all the tools | P1 | [details](/details/orgToolingMFA) |
+| 1. User Authentication | Use MFA against impersonation | P1 | [details](/details/MFAImpersonationDefense) |
+| 3. Service Authentication | Check sensitive information | P2 | [details](/details/noSensitiveInfoInRepositories) |
+| 3. Service Authentication | Ensure that the secrets are injected at runtime | P2 | [details](/details/injectedSecretsAtRuntime) |
+| 1. User Authentication | Use SSH Keys with Passphrases for Repository Access | P3 | [details](/details/SSHKeysRequired) |
+| 3. Service Authentication | Publish to npm Using MFA-Enabled Accounts | P3 | [details](/details/npmPublicationMFA) |
+| 3. Service Authentication | Secure GitHub Webhooks with Secrets | P3 | [details](/details/githubWebhookSecrets) |
+| 2. User Account Permissions | Restrict Default GitHub Org Member Permissions | P4 | [details](/details/restrictedOrgPermissions) |
+| 2. User Account Permissions | Allow Only Admins to Create Public Repositories | P4 | [details](/details/adminRepoCreationOnly) |
+| 2. User Account Permissions | Prevent Admins from Bypassing Branch Protection | P4 | [details](/details/preventBranchProtectionBypass) |
+| 2. User Account Permissions | Define Roles Aligned to Functional Responsibilities | P4 | [details](/details/defineFunctionalRoles) |
+| 2. User Account Permissions | Define Teams/Individuals with Write Access to Repositories | P4 | [details](/details/githubWriteAccessRoles) |
+| 2. User Account Permissions | Configure Two or more Owners for Access Continuity | P4 | [details](/details/twoOrMoreOwnersForAccess) |
+| 11. Dependency Management | Automate Dependency Vulnerability Identification | P6 | [details](/details/automateVulnDetection) |
+| 6. Coordinated Vulnerability Disclosure | Ensure Security.md Meets OpenJS CVD Guidelines | P7 | [details](/details/securityMdMeetsOpenJSCVD) |
+| 6. Coordinated Vulnerability Disclosure | Use CVD Tools to Manage Vulnerability Reports | P7 | [details](/details/useCVDToolForVulns) |
+| 6. Coordinated Vulnerability Disclosure | Define Clear Communication and Incident Response Plans | P7 | [details](/details/incidentResponsePlan) |
+| 6. Coordinated Vulnerability Disclosure | Assign CVEs to All Known Security Vulnerabilities | P7 | [details](/details/assignCVEForKnownVulns) |
+| 6. Coordinated Vulnerability Disclosure | Include CVE IDs in Release Notes for Security Fixes | P7 | [details](/details/includeCVEInReleaseNotes) |
+| 4. Github Workflow Permissions | Prevent Workflows from Creating or Approving PRs | P9 | [details](/details/blockWorkflowPRApproval) |
+| 9. Source Control | Disable Force Push on Default Branch | P9 | [details](/details/noForcePushDefaultBranch) |
+| 9. Source Control | Prevent Deletion of Default Branch | P9 | [details](/details/preventDeletionDefaultBranch) |
+| 9. Source Control | Require Default Branch Updates Before Merging | P9 | [details](/details/upToDateDefaultBranchBeforeMerge) |
+| 4. Github Workflows | Disable Self-Hosted Runners in GitHub Org | P10 | [details](/details/noSelfHostedRunners) |
+| 4. Github Workflows | Limit Workflow Write Permissions to Job-Level | P11 | [details](/details/limitWorkflowWritePermissions) |
+| 10. Dependency Inventory | Automate Monitoring of Outdated Dependencies | P14 | [details](/details/automateDependencyManagement) |
+| 10. Dependency Inventory | Provide Machine-Readable Dependency Lists | P14 | [details](/details/machineReadableDependencies) |
+| 10. Dependency Inventory | Uniquely Identify Modified Dependencies | P14 | [details](/details/identifyModifiedDependencies) |
     
 
 
@@ -49,17 +49,17 @@ slug: /implementations/retiring
 
 | Section | Item | Priority Group | Details |
 | --- | --- | --- | --- |
-| 1. User Authentication | Github.com: Use a passkey (AAL2) or hardware key (AAL3) that activates using a password or biometrics | Rec 1 | [details](/details/item-53) |
-| 1. User Authentication | Non-Interactive Github: Use a passkey (AAL2) or hardware key (AAL3) that activates using a password or biometrics | Rec 1 | [details](/details/item-54) |
-| 1. User Authentication | All Other Contexts: Use a passkey (AAL2) or hardware key (AAL3) that activates using a password or biometrics | Rec 1 | [details](/details/item-55) |
-| 4. Github Workflows | Limit changes from forks to workflows by requiring approval for all outside collaborators | Rec 2 | [details](/details/item-56) |
-| 4. Github Workflows | Use a Workflow Security Scanner | Rec 2 | [details](/details/item-57) |
-| 4. Github Workflows | Use a Github Runner Security Scanner | Rec 2 | [details](/details/item-58) |
-| 9. Source Control | Require Pull Requests before Merging | Rec 4 | [details](/details/item-61) |
-| 9. Source Control | Github Org Requires Commit Signoff for Web-Based Commits | Rec 4 | [details](/details/item-62) |
-| 9. Source Control | Require Signed Commits | Rec 4 | [details](/details/item-63) |
-| 10. Dependency Inventory | [Freestanding Applications Only] Commit a package-lock.json file with each release | Rec 5 | [details](/details/item-64) |
-| 9. Source Control | [For Projects with Two or more Maintainers] Require Approved PRs for all commits to mainline branches | Rec 6 | [details](/details/item-67) |
-| 2. User Account Permissions | Limit Number of Github Org Owners (ideally Fewer Than Three) | Rec 7 | [details](/details/item-68) |
-| 2. User Account Permissions | Limit Number of Github Repository Admins (ideally Fewer Than Three) | Rec 7 | [details](/details/item-69) |
+| 1. User Authentication | Use AAL2/3 Passkeys for GitHub Access | R1 | [details](/details/useHwKeyGithubAccess) |
+| 1. User Authentication | Use AAL2/3 Passkeys for Non-Interactive GitHub Access | R1 | [details](/details/useHwKeyGithubNonInteractive) |
+| 1. User Authentication | Use AAL2/3 Passkeys in All Other Contexts | R1 | [details](/details/useHwKeyOtherContexts) |
+| 4. Github Workflows | Require Approval for Forked Workflow Changes | R2 | [details](/details/forkWorkflowApproval) |
+| 4. Github Workflows | Use Workflow Security Scanners | R2 | [details](/details/workflowSecurityScanner) |
+| 4. Github Workflows | Use GitHub Runner Security Scanners | R2 | [details](/details/runnerSecurityScanner) |
+| 9. Source Control | Require Pull Requests Before Merging | R4 | [details](/details/PRsBeforeMerge) |
+| 9. Source Control | Enforce Commit Signoff for Web-Based Commits | R4 | [details](/details/commitSignoffForWeb) |
+| 9. Source Control | Require Signed Commits | R4 | [details](/details/requireSignedCommits) |
+| 10. Dependency Inventory | Include package-lock.json in Releases (Freestanding Apps) | R5 | [details](/details/includePackageLock) |
+| 9. Source Control | Require Approved PRs for Mainline Commits (Two+ Maintainers) | R6 | [details](/details/requirePRApprovalForMainline) |
+| 2. User Account Permissions | Limit GitHub Org Owners to Fewer Than Three | R7 | [details](/details/limitOrgOwners) |
+| 2. User Account Permissions | Limit GitHub Repo Admins to Fewer Than Three | R7 | [details](/details/limitRepoAdmins) |
     
