@@ -42,7 +42,7 @@ const config = {
         },
         items: [
           {
-            href: 'https://github.com/UlisesGascon/openjs-security-program-standards',
+            href: 'https://github.com/secure-dashboards/openjs-security-program-standards',
             label: 'Repository',
             position: 'right'
           }
