@@ -1,12 +1,15 @@
 [
   {
+    "priority group": "P0",
     "incubating": "Expected",
     "active": "Expected",
     "retiring": "Expected",
+    "slug": "softwareDesignTraining",
+    "title": "Training on Secure Software Design",
     "section": "7. Code Quality",
-    "c-scrm?": "",
-    "item": "At least One Primary Maintainer has taken TBD Training on Secure Software Design",
-    "priority group": "0",
+    "description": "At least One Primary Maintainer has taken TBD Training on Secure Software Design",
+    "how to": "",
+    "c-scrm": "",
     "mitre": {
       "url": "https://attack.mitre.org/mitigations/M1013/",
       "description": "M1013"
@@ -15,17 +18,19 @@
       "url": "https://www.bestpractices.dev/en/criteria?details=true&rationale=true#0.know_secure_design",
       "description": "OpenSSF Best Practices Badge Passing Level [know_secure_design]"
     },
-    "how to": "",
     "id": "item-0"
   },
   {
+    "priority group": "P0",
     "incubating": "Expected",
     "active": "Expected",
     "retiring": "Expected",
+    "slug": "owaspTop10Training",
+    "title": "Training on OWASP Top 10 or Equivalent",
     "section": "7. Code Quality",
-    "c-scrm?": "",
-    "item": "At least One Primary Maintainer has taken TBD Training on OWASP Top 10 or Equivalent",
-    "priority group": "0",
+    "description": "At least One Primary Maintainer has taken TBD Training on OWASP Top 10 or Equivalent",
+    "how to": "",
+    "c-scrm": "",
     "mitre": {
       "url": "https://attack.mitre.org/mitigations/M1013/",
       "description": "M1013"
@@ -34,17 +39,22 @@
       "url": "https://www.bestpractices.dev/en/criteria?details=true&rationale=true#0.know_common_errors",
       "description": "OpenSSF Best Practices Badge Passing Level [know_common_errors]"
     },
-    "how to": "",
     "id": "item-1"
   },
   {
+    "priority group": "P1",
     "incubating": "Expected",
     "active": "Expected",
     "retiring": "Expected",
+    "slug": "githubOrgMFA",
+    "title": "Enforce MFA in GitHub Organization(s)",
     "section": "1. User Authentication",
-    "c-scrm?": "Y",
-    "item": "Multi Factor Authentication (MFA) Enforced Across the Github Organization",
-    "priority group": "1",
+    "description": "Multi Factor Authentication (MFA) Enforced Across the Github Organization",
+    "how to": {
+      "url": "https://docs.github.com/en/organizations/keeping-your-organization-secure/managing-two-factor-authentication-for-your-organization/requiring-two-factor-authentication-in-your-organization",
+      "description": "Github Docs"
+    },
+    "c-scrm": "Y",
     "mitre": {
       "url": "https://cwe.mitre.org/data/definitions/308.html",
       "description": "CWE-308"
@@ -53,20 +63,22 @@
       "url": "https://best.openssf.org/SCM-BestPractices/github/enterprise/enterprise_enforce_two_factor_authentication.html",
       "description": "OpenSSF SCM Best PracticesOpenSSF Best Practices Badge Gold Level [require_2FA]"
     },
-    "how to": {
-      "url": "https://docs.github.com/en/organizations/keeping-your-organization-secure/managing-two-factor-authentication-for-your-organization/requiring-two-factor-authentication-in-your-organization",
-      "description": "Github Docs"
-    },
     "id": "item-2"
   },
   {
+    "priority group": "P1",
     "incubating": "Expected",
     "active": "Expected",
     "retiring": "Expected",
+    "slug": "npmOrgMFA",
+    "title": "Enforce MFA in npm Organization(s)",
     "section": "1. User Authentication",
-    "c-scrm?": "Y",
-    "item": "Multi Factor Authentication (MFA) Enforced Across the npm Organization",
-    "priority group": "1",
+    "description": "Multi Factor Authentication (MFA) Enforced Across the npm Organization",
+    "how to": {
+      "url": "https://docs.npmjs.com/requiring-two-factor-authentication-in-your-organization",
+      "description": "npm Docs"
+    },
+    "c-scrm": "Y",
     "mitre": {
       "url": "https://cwe.mitre.org/data/definitions/308.html",
       "description": "CWE-308"
@@ -75,20 +87,19 @@
       "url": "https://github.com/ossf/package-manager-best-practices/blob/main/published/npm.md",
       "description": "OpenSSF npm Best Practices"
     },
-    "how to": {
-      "url": "https://docs.npmjs.com/requiring-two-factor-authentication-in-your-organization",
-      "description": "npm Docs"
-    },
     "id": "item-3"
   },
   {
+    "priority group": "P1",
     "incubating": "Expected",
     "active": "Expected",
     "retiring": "Expected",
+    "slug": "orgToolingMFA",
+    "title": "Enforce MFA in all the tools",
     "section": "1. User Authentication",
-    "c-scrm?": "",
-    "item": "Multi Factor Authentication (MFA) Enforced in All Tools Wherever Techncially Feasible",
-    "priority group": "1",
+    "description": "Multi Factor Authentication (MFA) Enforced in All Tools Wherever Techncially Feasible",
+    "how to": "",
+    "c-scrm": "",
     "mitre": {
       "url": "https://cwe.mitre.org/data/definitions/308.html",
       "description": "CWE-308"
@@ -97,17 +108,22 @@
       "url": "https://github.com/cncf/tag-security/blob/main/security-whitepaper/v2/cloud-native-security-whitepaper.md",
       "description": "CNCF CNSWP v1.0"
     },
-    "how to": "",
     "id": "item-4"
   },
   {
+    "priority group": "P1",
     "incubating": "Expected",
     "active": "Expected",
     "retiring": "Expected",
+    "slug": "MFAImpersonationDefense",
+    "title": "Use MFA against impersonation",
     "section": "1. User Authentication",
-    "c-scrm?": "Y",
-    "item": "Use Multi Factor Authentication (MFA) Methods that Defend Against Impersonation when Available ",
-    "priority group": "1",
+    "description": "Use Multi Factor Authentication (MFA) Methods that Defend Against Impersonation when Available ",
+    "how to": {
+      "url": "https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa",
+      "description": "Github Docs"
+    },
+    "c-scrm": "Y",
     "mitre": {
       "url": "https://cwe.mitre.org/data/definitions/290.html",
       "description": "CWE-290"
@@ -116,20 +132,22 @@
       "url": "https://www.bestpractices.dev/en/criteria/2#2.secure_2FA",
       "description": "OpenSSF Best Practices Badge Gold Level [secure_2FA]"
     },
-    "how to": {
-      "url": "https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa",
-      "description": "Github Docs"
-    },
     "id": "item-5"
   },
   {
+    "priority group": "P2",
     "incubating": "Expected",
     "active": "Expected",
     "retiring": "Expected",
+    "slug": "noSensitiveInfoInRepositories",
+    "title": "Check sensitive information",
     "section": "3. Service Authentication",
-    "c-scrm?": "Y",
-    "item": "No Secrets and Credentials in Source Code",
-    "priority group": "2",
+    "description": "No Secrets and Credentials in Source Code",
+    "how to": {
+      "url": "https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning",
+      "description": "Github Docs"
+    },
+    "c-scrm": "Y",
     "mitre": {
       "url": "https://cwe.mitre.org/data/definitions/540.html",
       "description": "CWE-540"
@@ -138,20 +156,22 @@
       "url": "https://www.bestpractices.dev/en/criteria#0.no_leaked_credentials",
       "description": "OpenSSF Best Practices Badge Passing Level [no_leaked_credentials]"
     },
-    "how to": {
-      "url": "https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning",
-      "description": "Github Docs"
-    },
     "id": "item-6"
   },
   {
+    "priority group": "P2",
     "incubating": "Expected",
     "active": "Expected",
     "retiring": "Expected",
+    "slug": "injectedSecretsAtRuntime",
+    "title": "Ensure that the secrets are injected at runtime",
     "section": "3. Service Authentication",
-    "c-scrm?": "Y",
-    "item": "Secrets are injected at runtime, such as environment variables or as a file (eg: use Github Secrets)",
-    "priority group": "2",
+    "description": "Secrets are injected at runtime, such as environment variables or as a file (eg: use Github Secrets)",
+    "how to": {
+      "url": "https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions#creating-secrets-for-an-organization",
+      "description": "Github Docs"
+    },
+    "c-scrm": "Y",
     "mitre": {
       "url": "https://cwe.mitre.org/data/definitions/538.html",
       "description": "CWE-538"
@@ -160,20 +180,22 @@
       "url": "https://github.com/cncf/tag-security/blob/main/security-whitepaper/v2/cloud-native-security-whitepaper.md#secrets-encryption",
       "description": "CNCF CNSWP 2.0 #195"
     },
-    "how to": {
-      "url": "https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions#creating-secrets-for-an-organization",
-      "description": "Github Docs"
-    },
     "id": "item-7"
   },
   {
+    "priority group": "P2",
     "incubating": "Expected",
     "active": "Expected",
     "retiring": "N/A",
+    "slug": "scanCommitsForSensitiveInfo",
+    "title": "Ensure that all the commits are scanned",
     "section": "7. Code Quality",
-    "c-scrm?": "Y",
-    "item": "All Commits are Scanned for Secrets and Credentials ",
-    "priority group": "2",
+    "description": "All Commits are Scanned for Secrets and Credentials ",
+    "how to": {
+      "url": "https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning",
+      "description": "Github Docs"
+    },
+    "c-scrm": "Y",
     "mitre": {
       "url": "https://cwe.mitre.org/data/definitions/540.html",
       "description": "CWE-540"
@@ -182,20 +204,22 @@
       "url": "https://github.com/cncf/tag-security/blob/main/supply-chain-security/supply-chain-security-paper/sscsp.md#user-content-fnref-21-4e56305414bd02da4843ec1d7d856144",
       "description": "CNCF SSCP v1.0 #184"
     },
+    "id": "item-8"
+  },
+  {
+    "priority group": "P2",
+    "incubating": "Expected",
+    "active": "Expected",
+    "retiring": "N/A",
+    "slug": "preventLandingSensitiveCommits",
+    "title": "Block New Commits with Secrets or Credentials",
+    "section": "7. Code Quality",
+    "description": "New Commits Containing Secrets or Credentials are Blocked from Merging",
     "how to": {
       "url": "https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning",
       "description": "Github Docs"
     },
-    "id": "item-8"
-  },
-  {
-    "incubating": "Expected",
-    "active": "Expected",
-    "retiring": "N/A",
-    "section": "7. Code Quality",
-    "c-scrm?": "Y",
-    "item": "New Commits Containing Secrets or Credentials are Blocked from Merging",
-    "priority group": "2",
+    "c-scrm": "Y",
     "mitre": {
       "url": "https://cwe.mitre.org/data/definitions/358.html",
       "description": "CWE-358"
@@ -204,20 +228,22 @@
       "url": "https://www.bestpractices.dev/en/criteria#0.no_leaked_credentials",
       "description": "OpenSSF Best Practices Badge Passing Level [no_leaked_credentials]"
     },
-    "how to": {
-      "url": "https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning",
-      "description": "Github Docs"
-    },
     "id": "item-9"
   },
   {
+    "priority group": "P3",
     "incubating": "Expected",
     "active": "Expected",
     "retiring": "Expected",
+    "slug": "SSHKeysRequired",
+    "title": "Use SSH Keys with Passphrases for Repository Access",
     "section": "1. User Authentication",
-    "c-scrm?": "Y",
-    "item": "Use SSH keys for developer access to source code repositories and use a passphrase",
-    "priority group": "3",
+    "description": "Use SSH keys for developer access to source code repositories and use a passphrase",
+    "how to": {
+      "url": "https://docs.github.com/en/authentication/connecting-to-github-with-ssh/about-ssh",
+      "description": "Github Docs"
+    },
+    "c-scrm": "Y",
     "mitre": {
       "url": "https://cwe.mitre.org/data/definitions/309.html",
       "description": "CWE-309"
@@ -226,20 +252,19 @@
       "url": "https://github.com/cncf/tag-security/blob/main/supply-chain-security/supply-chain-security-paper/sscsp.md#use-ssh-keys-to-provide-developers-access-to-source-code-repositories",
       "description": "CNCF SSCP v1.0 #192"
     },
-    "how to": {
-      "url": "https://docs.github.com/en/authentication/connecting-to-github-with-ssh/about-ssh",
-      "description": "Github Docs"
-    },
     "id": "item-10"
   },
   {
+    "priority group": "P3",
     "incubating": "Expected",
     "active": "Expected",
     "retiring": "Expected",
+    "slug": "npmPublicationMFA",
+    "title": "Publish to npm Using MFA-Enabled Accounts",
     "section": "3. Service Authentication",
-    "c-scrm?": "Y",
-    "item": "Publish to npm using an MFA-enabled account rather than single factor legacy or granular access tokens",
-    "priority group": "3",
+    "description": "Publish to npm using an MFA-enabled account rather than single factor legacy or granular access tokens",
+    "how to": "",
+    "c-scrm": "Y",
     "mitre": {
       "url": "https://cwe.mitre.org/data/definitions/308.html",
       "description": "CWE-308"
@@ -248,17 +273,22 @@
       "url": "https://docs.npmjs.com/creating-and-viewing-access-tokens",
       "description": "npm Docs"
     },
-    "how to": "",
     "id": "item-11"
   },
   {
+    "priority group": "P3",
     "incubating": "Expected",
     "active": "Expected",
     "retiring": "Expected",
+    "slug": "githubWebhookSecrets",
+    "title": "Secure GitHub Webhooks with Secrets",
     "section": "3. Service Authentication",
-    "c-scrm?": "Y",
-    "item": "Github Webhooks Use Secrets",
-    "priority group": "3",
+    "description": "Github Webhooks Use Secrets",
+    "how to": {
+      "url": "https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions",
+      "description": "Github Docs"
+    },
+    "c-scrm": "Y",
     "mitre": {
       "url": "https://cwe.mitre.org/data/definitions/306",
       "description": "CWE-306"
@@ -267,20 +297,22 @@
       "url": "https://github.com/ossf/scorecard/blob/main/docs/checks.md#webhooks",
       "description": "OpenSSF Scorecard"
     },
-    "how to": {
-      "url": "https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions",
-      "description": "Github Docs"
-    },
     "id": "item-12"
   },
   {
+    "priority group": "P4",
     "incubating": "Expected",
     "active": "Expected",
     "retiring": "Expected",
+    "slug": "restrictedOrgPermissions",
+    "title": "Restrict Default GitHub Org Member Permissions",
     "section": "2. User Account Permissions",
-    "c-scrm?": "Y",
-    "item": "Default Github Org Member Permissions Should Be Restricted",
-    "priority group": "4",
+    "description": "Default Github Org Member Permissions Should Be Restricted",
+    "how to": {
+      "url": "https://docs.github.com/en/organizations/managing-user-access-to-your-organizations-repositories/managing-repository-roles/setting-base-permissions-for-an-organization",
+      "description": "Github Docs"
+    },
+    "c-scrm": "Y",
     "mitre": {
       "url": "https://capec.mitre.org/data/definitions/180.html",
       "description": "CAPEC-180"
@@ -289,20 +321,22 @@
       "url": "https://best.openssf.org/SCM-BestPractices/github/organization/default_repository_permission_is_not_none.html",
       "description": "OpenSSF SCM Best Practices"
     },
-    "how to": {
-      "url": "https://docs.github.com/en/organizations/managing-user-access-to-your-organizations-repositories/managing-repository-roles/setting-base-permissions-for-an-organization",
-      "description": "Github Docs"
-    },
     "id": "item-13"
   },
   {
+    "priority group": "P4",
     "incubating": "Expected",
     "active": "Expected",
     "retiring": "Expected",
+    "slug": "adminRepoCreationOnly",
+    "title": "Allow Only Admins to Create Public Repositories",
     "section": "2. User Account Permissions",
-    "c-scrm?": "Y",
-    "item": "Only Admins Should Be Able To Create Public Repositories",
-    "priority group": "4",
+    "description": "Only Admins Should Be Able To Create Public Repositories",
+    "how to": {
+      "url": "https://docs.github.com/en/organizations/managing-organization-settings/restricting-repository-creation-in-your-organization",
+      "description": "Github Docs"
+    },
+    "c-scrm": "Y",
     "mitre": {
       "url": "https://capec.mitre.org/data/definitions/122.html",
       "description": "CAPEC-122"
@@ -311,20 +345,22 @@
       "url": "https://best.openssf.org/SCM-BestPractices/github/organization/non_admins_can_create_public_repositories.html",
       "description": "OpenSSF SCM Best Practices"
     },
-    "how to": {
-      "url": "https://docs.github.com/en/organizations/managing-organization-settings/restricting-repository-creation-in-your-organization",
-      "description": "Github Docs"
-    },
     "id": "item-14"
   },
   {
+    "priority group": "P4",
     "incubating": "Expected",
     "active": "Expected",
     "retiring": "Expected",
+    "slug": "preventBranchProtectionBypass",
+    "title": "Prevent Admins from Bypassing Branch Protection",
     "section": "2. User Account Permissions",
-    "c-scrm?": "Y",
-    "item": "[For Projects with Two or more Admins] Do not allow Admins to Bypass Branch Protection Settings",
-    "priority group": "4",
+    "description": "[For Projects with Two or more Admins] Do not allow Admins to Bypass Branch Protection Settings",
+    "how to": {
+      "url": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches#do-not-allow-bypassing-the-above-settings",
+      "description": "Github Docs"
+    },
+    "c-scrm": "Y",
     "mitre": {
       "url": "https://capec.mitre.org/data/definitions/122.html",
       "description": "CAPEC-122"
@@ -333,20 +369,22 @@
       "url": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches",
       "description": "Github Supply Chain Security Best Practices"
     },
-    "how to": {
-      "url": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches#do-not-allow-bypassing-the-above-settings",
-      "description": "Github Docs"
-    },
     "id": "item-15"
   },
   {
+    "priority group": "P4",
     "incubating": "Expected",
     "active": "Expected",
     "retiring": "Expected",
+    "slug": "defineFunctionalRoles",
+    "title": "Define Roles Aligned to Functional Responsibilities",
     "section": "2. User Account Permissions",
-    "c-scrm?": "Y",
-    "item": "Define roles aligned to functional responsibilities",
-    "priority group": "4",
+    "description": "Define roles aligned to functional responsibilities",
+    "how to": {
+      "url": "https://docs.github.com/en/organizations/managing-user-access-to-your-organizations-repositories/managing-repository-roles/repository-roles-for-an-organization",
+      "description": "Github Docs"
+    },
+    "c-scrm": "Y",
     "mitre": {
       "url": "https://capec.mitre.org/data/definitions/122.html",
       "description": "CAPEC-122"
@@ -355,20 +393,22 @@
       "url": "https://github.com/cncf/tag-security/blob/main/supply-chain-security/supply-chain-security-paper/sscsp.md#define-roles-aligned-to-functional-responsibilities",
       "description": "CNCF SSCP v1.0 #188"
     },
+    "id": "item-16"
+  },
+  {
+    "priority group": "P4",
+    "incubating": "Expected",
+    "active": "Expected",
+    "retiring": "Expected",
+    "slug": "githubWriteAccessRoles",
+    "title": "Define Teams/Individuals with Write Access to Repositories",
+    "section": "2. User Account Permissions",
+    "description": "Define Individuals/Teams who Write Access to a Github Repo",
     "how to": {
       "url": "https://docs.github.com/en/organizations/managing-user-access-to-your-organizations-repositories/managing-repository-roles/repository-roles-for-an-organization",
       "description": "Github Docs"
     },
-    "id": "item-16"
-  },
-  {
-    "incubating": "Expected",
-    "active": "Expected",
-    "retiring": "Expected",
-    "section": "2. User Account Permissions",
-    "c-scrm?": "Y",
-    "item": "Define Individuals/Teams who Write Access to a Github Repo",
-    "priority group": "4",
+    "c-scrm": "Y",
     "mitre": {
       "url": "https://capec.mitre.org/data/definitions/180.html",
       "description": "CAPEC-180"
@@ -377,20 +417,22 @@
       "url": "https://github.com/cncf/tag-security/blob/main/supply-chain-security/supply-chain-security-paper/sscsp.md#define-individualsteams-that-are-responsible-for-code-in-a-repository-and-associated-coding-conventions",
       "description": "CNCF SSCP v1.0 #185"
     },
-    "how to": {
-      "url": "https://docs.github.com/en/organizations/managing-user-access-to-your-organizations-repositories/managing-repository-roles/repository-roles-for-an-organization",
-      "description": "Github Docs"
-    },
     "id": "item-17"
   },
   {
+    "priority group": "P4",
     "incubating": "Expected",
     "active": "Expected",
     "retiring": "Expected",
+    "slug": "twoOrMoreOwnersForAccess",
+    "title": "Configure Two or more Owners for Access Continuity",
     "section": "2. User Account Permissions",
-    "c-scrm?": "Y",
-    "item": "[For Projects with Two or more Owners] Have at least Two Owners Configured for Access Continuity",
-    "priority group": "4",
+    "description": "[For Projects with Two or more Owners] Have at least Two Owners Configured for Access Continuity",
+    "how to": {
+      "url": "https://docs.github.com/en/organizations/managing-peoples-access-to-your-organization-with-roles/maintaining-ownership-continuity-for-your-organization",
+      "description": "Github Docs"
+    },
+    "c-scrm": "Y",
     "mitre": {
       "url": "https://attack.mitre.org/mitigations/M1026/",
       "description": "M1026"
@@ -399,52 +441,58 @@
       "url": "https://www.bestpractices.dev/en/criteria?details=true&rationale=true#1.access_continuity",
       "description": "OpenSSF Best Practices Badge Silver Level [access_continuity]"
     },
-    "how to": {
-      "url": "https://docs.github.com/en/organizations/managing-peoples-access-to-your-organization-with-roles/maintaining-ownership-continuity-for-your-organization",
-      "description": "Github Docs"
-    },
     "id": "item-18"
   },
   {
+    "priority group": "P5",
     "incubating": "Expected",
     "active": "Expected",
     "retiring": "N/A",
+    "slug": "patchCriticalVulns30Days",
+    "title": "Patch Actively Exploited Critical Vulnerabilities within 30 Days",
     "section": "5. Vulnerability Management",
-    "c-scrm?": "",
-    "item": "Actively Exploited Critical Vulnerabilities Patched within 30 Days",
-    "priority group": "5",
+    "description": "Actively Exploited Critical Vulnerabilities Patched within 30 Days",
+    "how to": "",
+    "c-scrm": "",
     "mitre": "",
     "sources": {
       "url": "https://www.bestpractices.dev/en/criteria#0.vulnerabilities_critical_fixed",
       "description": "OpenSSF Best Practices Badge Passing Level [vulnerabilities_critical_fixed]"
     },
-    "how to": "",
     "id": "item-19"
   },
   {
+    "priority group": "P5",
     "incubating": "Expected",
     "active": "Expected",
     "retiring": "N/A",
+    "slug": "patchNonCriticalVulns90Days",
+    "title": "Patch Non-Critical Vulnerabilities within 90 Days",
     "section": "5. Vulnerability Management",
-    "c-scrm?": "",
-    "item": "Non-Critical Exploitable Vulnerabilities Patched within 90 Days",
-    "priority group": "5",
+    "description": "Non-Critical Exploitable Vulnerabilities Patched within 90 Days",
+    "how to": "",
+    "c-scrm": "",
     "mitre": "",
     "sources": {
       "url": "https://googleprojectzero.blogspot.com/p/vulnerability-disclosure-policy.html",
       "description": "Google Project Zero Vulnerability Disclosure Policy"
     },
-    "how to": "",
     "id": "item-20"
   },
   {
+    "priority group": "P6",
     "incubating": "Expected",
     "active": "Expected",
     "retiring": "Expected",
+    "slug": "automateVulnDetection",
+    "title": "Automate Dependency Vulnerability Identification",
     "section": "11. Dependency Management",
-    "c-scrm?": "Y",
-    "item": "An automated process to identify dependencies with publicly disclosed vulnerabilities",
-    "priority group": "6",
+    "description": "An automated process to identify dependencies with publicly disclosed vulnerabilities",
+    "how to": {
+      "url": "https://docs.github.com/en/code-security/dependabot/dependabot-security-updates/configuring-dependabot-security-updates#managing-dependabot-security-updates-for-your-repositories",
+      "description": "Github Docs"
+    },
+    "c-scrm": "Y",
     "mitre": {
       "url": "https://cwe.mitre.org/data/definitions/1395.html",
       "description": "CWE-1395"
@@ -453,20 +501,22 @@
       "url": "https://scvs.owasp.org/scvs/v5-component-analysis/",
       "description": "OWASP SCVS L1 5.4"
     },
-    "how to": {
-      "url": "https://docs.github.com/en/code-security/dependabot/dependabot-security-updates/configuring-dependabot-security-updates#managing-dependabot-security-updates-for-your-repositories",
-      "description": "Github Docs"
-    },
     "id": "item-21"
   },
   {
+    "priority group": "P6",
     "incubating": "Expected",
     "active": "Expected",
     "retiring": "N/A",
+    "slug": "staticCodeAnalysis",
+    "title": "Use Automated Static Code Analysis Tools",
     "section": "7. Code Quality",
-    "c-scrm?": "",
-    "item": "Use an Automated Static Code Analysis Tool (eg: ESLInt)",
-    "priority group": "6",
+    "description": "Use an Automated Static Code Analysis Tool (eg: ESLInt)",
+    "how to": {
+      "url": "https://eslint.org/docs/latest/use/getting-started#installation-and-usage",
+      "description": "ESLint Docs"
+    },
+    "c-scrm": "",
     "mitre": {
       "url": "https://cwe.mitre.org/data/definitions/1076.html",
       "description": "CWE-1076"
@@ -475,20 +525,22 @@
       "url": "https://scvs.owasp.org/scvs/v5-component-analysis/",
       "description": "OWASP SCVS L1 5.1"
     },
+    "id": "item-22"
+  },
+  {
+    "priority group": "P6",
+    "incubating": "Expected",
+    "active": "Expected",
+    "retiring": "N/A",
+    "slug": "resolveLinterWarnings",
+    "title": "Address Compiler/Linter Warnings Before Merging",
+    "section": "7. Code Quality",
+    "description": "Compilers/Linter Warnings Addressed in order to Merge",
     "how to": {
       "url": "https://eslint.org/docs/latest/use/getting-started#installation-and-usage",
       "description": "ESLint Docs"
     },
-    "id": "item-22"
-  },
-  {
-    "incubating": "Expected",
-    "active": "Expected",
-    "retiring": "N/A",
-    "section": "7. Code Quality",
-    "c-scrm?": "",
-    "item": "Compilers/Linter Warnings Addressed in order to Merge",
-    "priority group": "6",
+    "c-scrm": "",
     "mitre": {
       "url": "https://cwe.mitre.org/data/definitions/1127.html",
       "description": "CWE-1127"
@@ -497,20 +549,22 @@
       "url": "https://www.bestpractices.dev/en/criteria?details=true&rationale=true#1.warnings_strict",
       "description": "OpenSSF Best Practices Badge Silver Level [warnings_strict]"
     },
-    "how to": {
-      "url": "https://eslint.org/docs/latest/use/getting-started#installation-and-usage",
-      "description": "ESLint Docs"
-    },
     "id": "item-23"
   },
   {
+    "priority group": "P6",
     "incubating": "Expected",
     "active": "Expected",
     "retiring": "N/A",
+    "slug": "staticAppSecTesting",
+    "title": "Use Static Application Security Testing for All Commits",
     "section": "7. Code Quality",
-    "c-scrm?": "",
-    "item": "All Commits are Scanned by a Static Application Security Testing Tool",
-    "priority group": "6",
+    "description": "All Commits are Scanned by a Static Application Security Testing Tool",
+    "how to": {
+      "url": "https://docs.github.com/en/code-security/code-scanning/introduction-to-code-scanning/about-code-scanning-with-codeql",
+      "description": "CodeQL Docs"
+    },
+    "c-scrm": "",
     "mitre": {
       "url": "https://cwe.mitre.org/data/definitions/1076.html",
       "description": "CWE-1076"
@@ -519,20 +573,22 @@
       "url": "https://github.com/ossf/scorecard/blob/main/docs/checks.md#sast",
       "description": "OWASP SCVS L1 6.6OpenSSF Scorecard"
     },
-    "how to": {
-      "url": "https://docs.github.com/en/code-security/code-scanning/introduction-to-code-scanning/about-code-scanning-with-codeql",
-      "description": "CodeQL Docs"
-    },
     "id": "item-24"
   },
   {
+    "priority group": "P6",
     "incubating": "Expected",
     "active": "Expected",
     "retiring": "N/A",
+    "slug": "commitStatusChecks",
+    "title": "Require Commit Status Checks to Pass Before Merging",
     "section": "7. Code Quality",
-    "c-scrm?": "Y",
-    "item": "All Required Commit Status Checks must pass before Merging",
-    "priority group": "6",
+    "description": "All Required Commit Status Checks must pass before Merging",
+    "how to": {
+      "url": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches#require-status-checks-before-merging",
+      "description": "Github Docs"
+    },
+    "c-scrm": "Y",
     "mitre": {
       "url": "https://cwe.mitre.org/data/definitions/358.html",
       "description": "CWE-358"
@@ -541,151 +597,169 @@
       "url": "https://github.com/ossf/scorecard/blob/main/docs/checks.md#branch-protection",
       "description": "OpenSSF Scorecard"
     },
-    "how to": {
-      "url": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches#require-status-checks-before-merging",
-      "description": "Github Docs"
-    },
     "id": "item-25"
   },
   {
+    "priority group": "P7",
     "incubating": "Expected",
     "active": "Expected",
     "retiring": "Expected",
-    "section": "7. Code Quality",
-    "c-scrm?": "",
-    "item": "Security.md Meets OpenJS CVD Guidelines ",
-    "priority group": "7",
+    "slug": "securityMdMeetsOpenJSCVD",
+    "title": "Ensure Security.md Meets OpenJS CVD Guidelines",
+    "section": "6. Coordinated Vulnerability Disclosure",
+    "description": "Security.md Meets OpenJS CVD Guidelines ",
+    "how to": "OpenJS CVD Guidance",
+    "c-scrm": "",
     "mitre": "",
     "sources": {
       "url": "https://github.com/ossf/scorecard/blob/main/docs/checks.md#security-policy",
       "description": "OpenSSF Scorecard"
     },
-    "how to": "OpenJS CVD Guidance",
     "id": "item-26"
   },
   {
+    "priority group": "P7",
     "incubating": "Expected",
     "active": "Expected",
     "retiring": "Expected",
+    "slug": "useCVDToolForVulns",
+    "title": "Use CVD Tools to Manage Vulnerability Reports",
     "section": "6. Coordinated Vulnerability Disclosure",
-    "c-scrm?": "",
-    "item": "Project Leverages a CVD Tool to Privately Receive/Manage External Vulnerability Reports (eg: H1/GH PVR)",
-    "priority group": "7",
+    "description": "Project Leverages a CVD Tool to Privately Receive/Manage External Vulnerability Reports (eg: H1/GH PVR)",
+    "how to": {
+      "url": "https://docs.github.com/en/code-security/security-advisories/working-with-repository-security-advisories/configuring-private-vulnerability-reporting-for-an-organization",
+      "description": "Github Docs"
+    },
+    "c-scrm": "",
     "mitre": "",
     "sources": {
       "url": "https://www.bestpractices.dev/en/criteria?details=true&rationale=true#0.vulnerability_report_private",
       "description": "OpenSSF Best Practices Badge Passing Level [vulnerability_report_private]"
     },
-    "how to": {
-      "url": "https://docs.github.com/en/code-security/security-advisories/working-with-repository-security-advisories/configuring-private-vulnerability-reporting-for-an-organization",
-      "description": "Github Docs"
-    },
     "id": "item-27"
   },
   {
+    "priority group": "P7",
     "incubating": "Expected",
     "active": "Expected",
     "retiring": "N/A",
+    "slug": "vulnResponse14Days",
+    "title": "Respond to External Vulnerability Reports in Under 14 Days",
     "section": "6. Coordinated Vulnerability Disclosure",
-    "c-scrm?": "",
-    "item": "All External Vulnerability Reports Responded to <14 Days",
-    "priority group": "7",
+    "description": "All External Vulnerability Reports Responded to <14 Days",
+    "how to": "",
+    "c-scrm": "",
     "mitre": "",
     "sources": {
       "url": "https://www.bestpractices.dev/en/criteria#0.vulnerability_report_response",
       "description": "OpenSSF Best Practices Badge Passing Level [vulnerability_report_response]"
     },
-    "how to": "",
     "id": "item-28"
   },
   {
+    "priority group": "P7",
     "incubating": "Expected",
     "active": "Expected",
     "retiring": "Expected",
+    "slug": "incidentResponsePlan",
+    "title": "Define Clear Communication and Incident Response Plans",
     "section": "6. Coordinated Vulnerability Disclosure",
-    "c-scrm?": "",
-    "item": "Establish a Clear Communication and Incident Response Plan",
-    "priority group": "7",
+    "description": "Establish a Clear Communication and Incident Response Plan",
+    "how to": "",
+    "c-scrm": "",
     "mitre": "",
     "sources": {
       "url": "https://best.openssf.org/SCM-BestPractices/#operations",
       "description": "OpenSSF SCM Best Practices"
     },
-    "how to": "",
     "id": "item-29"
   },
   {
+    "priority group": "P7",
     "incubating": "Expected",
     "active": "Expected",
     "retiring": "Expected",
+    "slug": "assignCVEForKnownVulns",
+    "title": "Assign CVEs to All Known Security Vulnerabilities",
     "section": "6. Coordinated Vulnerability Disclosure",
-    "c-scrm?": "Y",
-    "item": "All Known Security Vulnerabilities are Issued a CVE",
-    "priority group": "7",
+    "description": "All Known Security Vulnerabilities are Issued a CVE",
+    "how to": "",
+    "c-scrm": "Y",
     "mitre": "",
     "sources": {
       "url": "https://www.bestpractices.dev/en/criteria?details=true&rationale=true#0.release_notes_vulns",
       "description": "OpenSSF Best Practices Badge Passing Level [release_notes_vulns]"
     },
-    "how to": "",
     "id": "item-30"
   },
   {
+    "priority group": "P7",
     "incubating": "Expected",
     "active": "Expected",
     "retiring": "Expected",
+    "slug": "includeCVEInReleaseNotes",
+    "title": "Include CVE IDs in Release Notes for Security Fixes",
     "section": "6. Coordinated Vulnerability Disclosure",
-    "c-scrm?": "",
-    "item": "Release Notes must Include the CVE ID of Patched Security Vulnerabilities",
-    "priority group": "7",
+    "description": "Release Notes must Include the CVE ID of Patched Security Vulnerabilities",
+    "how to": "",
+    "c-scrm": "",
     "mitre": "",
     "sources": {
       "url": "https://www.bestpractices.dev/en/criteria?details=true&rationale=true#0.release_notes_vulns",
       "description": "OpenSSF Best Practices Badge Passing Level [release_notes_vulns]"
     },
-    "how to": "",
     "id": "item-31"
   },
   {
+    "priority group": "P8",
     "incubating": "Deferrable",
     "active": "Expected",
     "retiring": "N/A",
+    "slug": "regressionTestsForVulns",
+    "title": "Create Regression Tests for Bugs and Security Vulnerabilities",
     "section": "7. Code Quality",
-    "c-scrm?": "",
-    "item": "Regression Tests for => 50% of Bugs and 100% of Security Vulns",
-    "priority group": "8",
+    "description": "Regression Tests for => 50% of Bugs and 100% of Security Vulns",
+    "how to": "",
+    "c-scrm": "",
     "mitre": "",
     "sources": {
       "url": "https://www.bestpractices.dev/en/criteria?details=true&rationale=true#1.regression_tests_added50",
       "description": "OpenSSF Best Practices Badge Silver Level [regression_tests_added50]"
     },
-    "how to": "",
     "id": "item-32"
   },
   {
+    "priority group": "P9",
     "incubating": "Expected",
     "active": "Expected",
     "retiring": "N/A",
+    "slug": "defaultTokenPermissionsReadOnly",
+    "title": "Set Default GitHub Workflow Token Permissions to Read Only",
     "section": "4. Github Workflow Permissions",
-    "c-scrm?": "Y",
-    "item": "Github Org Default Workflow Token Permissions are Set to Read Only",
-    "priority group": "9",
+    "description": "Github Org Default Workflow Token Permissions are Set to Read Only",
+    "how to": "",
+    "c-scrm": "Y",
     "mitre": {
       "url": "https://cwe.mitre.org/data/definitions/250.html",
       "description": "CWE-250"
     },
     "sources": "",
-    "how to": "",
     "id": "item-33"
   },
   {
+    "priority group": "P9",
     "incubating": "Expected",
     "active": "Expected",
     "retiring": "Expected",
+    "slug": "blockWorkflowPRApproval",
+    "title": "Prevent Workflows from Creating or Approving PRs",
     "section": "4. Github Workflow Permissions",
-    "c-scrm?": "Y",
-    "item": "Workflows are not Allowed To Create or Approve Pull Requests",
-    "priority group": "9",
+    "description": "Workflows are not Allowed To Create or Approve Pull Requests",
+    "how to": {
+      "url": "https://docs.github.com/en/enterprise-cloud@latest/admin/policies/enforcing-policies-for-your-enterprise/enforcing-policies-for-github-actions-in-your-enterprise#preventing-github-actions-from-creating-or-approving-pull-requests",
+      "description": "Github Docs"
+    },
+    "c-scrm": "Y",
     "mitre": {
       "url": "https://cwe.mitre.org/data/definitions/250.html",
       "description": "CWE-250"
@@ -694,39 +768,43 @@
       "url": "https://github.com/ossf/scorecard/blob/main/docs/checks.md#token-permissions",
       "description": "OpenSSF Scorecard"
     },
-    "how to": {
-      "url": "https://docs.github.com/en/enterprise-cloud@latest/admin/policies/enforcing-policies-for-your-enterprise/enforcing-policies-for-github-actions-in-your-enterprise#preventing-github-actions-from-creating-or-approving-pull-requests",
-      "description": "Github Docs"
-    },
     "id": "item-34"
   },
   {
+    "priority group": "P9",
     "incubating": "Expected",
     "active": "Expected",
     "retiring": "Expected",
+    "slug": "noForcePushDefaultBranch",
+    "title": "Disable Force Push on Default Branch",
     "section": "9. Source Control",
-    "c-scrm?": "Y",
-    "item": "Prevent Force Push on Default Branch",
-    "priority group": "9",
+    "description": "Prevent Force Push on Default Branch",
+    "how to": {
+      "url": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches",
+      "description": "Github Docs"
+    },
+    "c-scrm": "Y",
     "mitre": "",
     "sources": {
       "url": "https://github.com/ossf/scorecard/blob/main/docs/checks.md#branch-protection",
       "description": "OpenSSF Scorecard"
     },
+    "id": "item-35"
+  },
+  {
+    "priority group": "P9",
+    "incubating": "Expected",
+    "active": "Expected",
+    "retiring": "Expected",
+    "slug": "preventDeletionDefaultBranch",
+    "title": "Prevent Deletion of Default Branch",
+    "section": "9. Source Control",
+    "description": "Prevent Default Branch Deletion",
     "how to": {
       "url": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches",
       "description": "Github Docs"
     },
-    "id": "item-35"
-  },
-  {
-    "incubating": "Expected",
-    "active": "Expected",
-    "retiring": "Expected",
-    "section": "9. Source Control",
-    "c-scrm?": "Y",
-    "item": "Prevent Default Branch Deletion",
-    "priority group": "9",
+    "c-scrm": "Y",
     "mitre": {
       "url": "https://cwe.mitre.org/data/definitions/267.html",
       "description": "CWE-267"
@@ -735,39 +813,43 @@
       "url": "https://github.com/ossf/scorecard/blob/main/docs/checks.md#branch-protection",
       "description": "OpenSSF Scorecard"
     },
-    "how to": {
-      "url": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches",
-      "description": "Github Docs"
-    },
     "id": "item-36"
   },
   {
+    "priority group": "P9",
     "incubating": "Expected",
     "active": "Expected",
     "retiring": "Expected",
+    "slug": "upToDateDefaultBranchBeforeMerge",
+    "title": "Require Default Branch Updates Before Merging",
     "section": "9. Source Control",
-    "c-scrm?": "Y",
-    "item": "Default Branch must be Up to Date before Merging",
-    "priority group": "9",
+    "description": "Default Branch must be Up to Date before Merging",
+    "how to": {
+      "url": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches#require-status-checks-before-merging",
+      "description": "Github Docs"
+    },
+    "c-scrm": "Y",
     "mitre": "",
     "sources": {
       "url": "https://github.com/ossf/scorecard/blob/main/docs/checks.md#branch-protection",
       "description": "OpenSSF Scorecard"
     },
-    "how to": {
-      "url": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches#require-status-checks-before-merging",
-      "description": "Github Docs"
-    },
     "id": "item-37"
   },
   {
+    "priority group": "P10",
     "incubating": "Expected",
     "active": "Expected",
     "retiring": "N/A",
-    "section": "4. Github Workflow Permissions",
-    "c-scrm?": "Y",
-    "item": "GitHub Organization Secrets are Restricted to Selected Repositories",
-    "priority group": "10",
+    "slug": "restrictOrgSecrets",
+    "title": "Restrict GitHub Org Secrets to Specific Repositories",
+    "section": "4. Github Workflows",
+    "description": "GitHub Organization Secrets are Restricted to Selected Repositories",
+    "how to": {
+      "url": "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository#managing-github-actions-permissions-for-your-repository",
+      "description": "Github Docs"
+    },
+    "c-scrm": "Y",
     "mitre": {
       "url": "https://cwe.mitre.org/data/definitions/250.html",
       "description": "CWE-250"
@@ -776,20 +858,22 @@
       "url": "https://best.openssf.org/SCM-BestPractices/github/actions/all_repositories_can_run_github_actions.html",
       "description": "OpenSSF SCM Best Practices"
     },
-    "how to": {
-      "url": "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository#managing-github-actions-permissions-for-your-repository",
-      "description": "Github Docs"
-    },
     "id": "item-38"
   },
   {
+    "priority group": "P10",
     "incubating": "Expected",
     "active": "Expected",
     "retiring": "N/A",
-    "section": "4. Github Workflow Permissions",
-    "c-scrm?": "Y",
-    "item": "GitHub Actions Should Be Limited To Verified or Explicitly Trusted Actions",
-    "priority group": "10",
+    "slug": "verifiedActionsOnly",
+    "title": "Limit GitHub Actions to Verified or Trusted Actions",
+    "section": "4. Github Workflows",
+    "description": "GitHub Actions Should Be Limited To Verified or Explicitly Trusted Actions",
+    "how to": {
+      "url": "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository#allowing-select-actions-and-reusable-workflows-to-run",
+      "description": "Github Docs"
+    },
+    "c-scrm": "Y",
     "mitre": {
       "url": "https://cwe.mitre.org/data/definitions/1357.html",
       "description": "CWE-1357"
@@ -798,20 +882,22 @@
       "url": "https://best.openssf.org/SCM-BestPractices/github/actions/all_github_actions_are_allowed.html",
       "description": "OpenSSF SCM Best Practices"
     },
-    "how to": {
-      "url": "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository#allowing-select-actions-and-reusable-workflows-to-run",
-      "description": "Github Docs"
-    },
     "id": "item-39"
   },
   {
+    "priority group": "P10",
     "incubating": "Expected",
     "active": "Expected",
     "retiring": "Expected",
+    "slug": "noSelfHostedRunners",
+    "title": "Disable Self-Hosted Runners in GitHub Org",
     "section": "4. Github Workflows",
-    "c-scrm?": "Y",
-    "item": "Disable use of Self-Hosted Runners in Github Org",
-    "priority group": "10",
+    "description": "Disable use of Self-Hosted Runners in Github Org",
+    "how to": {
+      "url": "https://docs.github.com/en/organizations/managing-organization-settings/disabling-or-limiting-github-actions-for-your-organization#limiting-the-use-of-self-hosted-runners",
+      "description": "Github Docs"
+    },
+    "c-scrm": "Y",
     "mitre": {
       "url": "https://capec.mitre.org/data/definitions/439.html",
       "description": "CAPEC-439"
@@ -820,20 +906,19 @@
       "url": "https://docs.github.com/en/actions/security-guides/security-hardening-for-github-actions#hardening-for-self-hosted-runners",
       "description": "Github Action Hardening Docs"
     },
-    "how to": {
-      "url": "https://docs.github.com/en/organizations/managing-organization-settings/disabling-or-limiting-github-actions-for-your-organization#limiting-the-use-of-self-hosted-runners",
-      "description": "Github Docs"
-    },
     "id": "item-40"
   },
   {
+    "priority group": "P11",
     "incubating": "Expected",
     "active": "Expected",
     "retiring": "N/A",
+    "slug": "noArbitraryCodeInPipeline",
+    "title": "Restrict Build Pipeline Code Execution to Build Scripts",
     "section": "4. Github Workflows",
-    "c-scrm?": "Y",
-    "item": "Build Pipeline Cannot Execute Arbitrary Code from Outside of a Build Script",
-    "priority group": "11",
+    "description": "Build Pipeline Cannot Execute Arbitrary Code from Outside of a Build Script",
+    "how to": "",
+    "c-scrm": "Y",
     "mitre": {
       "url": "https://cwe.mitre.org/data/definitions/94.html",
       "description": "CWE-94"
@@ -842,17 +927,22 @@
       "url": "https://github.com/ossf/scorecard/blob/main/docs/checks.md#dangerous-workflow",
       "description": "OpenSSF Scorecard"
     },
-    "how to": "",
     "id": "item-41"
   },
   {
+    "priority group": "P11",
     "incubating": "Expected",
     "active": "Expected",
     "retiring": "Expected",
+    "slug": "limitWorkflowWritePermissions",
+    "title": "Limit Workflow Write Permissions to Job-Level",
     "section": "4. Github Workflows",
-    "c-scrm?": "Y",
-    "item": "Only Allow Workflows Write Permissions at the Job-Level",
-    "priority group": "11",
+    "description": "Only Allow Workflows Write Permissions at the Job-Level",
+    "how to": {
+      "url": "https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#permissions",
+      "description": "Github Docs"
+    },
+    "c-scrm": "Y",
     "mitre": {
       "url": "https://cwe.mitre.org/data/definitions/250.html",
       "description": "CWE-250"
@@ -861,20 +951,22 @@
       "url": "https://github.com/ossf/scorecard/blob/main/docs/checks.md#token-permissions",
       "description": "OpenSSF Scorecard"
     },
-    "how to": {
-      "url": "https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#permissions",
-      "description": "Github Docs"
-    },
     "id": "item-42"
   },
   {
+    "priority group": "P11",
     "incubating": "Expected",
     "active": "Expected",
     "retiring": "N/A",
+    "slug": "preventScriptInjection",
+    "title": "Avoid Script Injection from Untrusted Variables",
     "section": "4. Github Workflows",
-    "c-scrm?": "Y",
-    "item": "Avoid Script Injection from Untrusted Context Variables",
-    "priority group": "11",
+    "description": "Avoid Script Injection from Untrusted Context Variables",
+    "how to": {
+      "url": "https://securitylab.github.com/research/github-actions-untrusted-input/",
+      "description": "Github Docs"
+    },
+    "c-scrm": "Y",
     "mitre": {
       "url": "https://cwe.mitre.org/data/definitions/454.html",
       "description": "CWE-454"
@@ -883,52 +975,55 @@
       "url": "https://github.com/ossf/scorecard/blob/main/docs/checks.md#dangerous-workflow",
       "description": "OpenSSF Scorecard"
     },
-    "how to": {
-      "url": "https://securitylab.github.com/research/github-actions-untrusted-input/",
-      "description": "Github Docs"
-    },
     "id": "item-43"
   },
   {
+    "priority group": "P12",
     "incubating": "Expected",
     "active": "Expected",
     "retiring": "N/A",
-    "section": "4. Github Workflow Permissions",
-    "c-scrm?": "Y",
-    "item": "Consistent and Automated Build Process is Documented and Used",
-    "priority group": "12",
+    "slug": "consistentBuildProcessDocs",
+    "title": "Document Consistent and Automated Build Processes",
+    "section": "4. Github Workflows",
+    "description": "Consistent and Automated Build Process is Documented and Used",
+    "how to": "",
+    "c-scrm": "Y",
     "mitre": {
       "url": "https://cwe.mitre.org/data/definitions/1068.html",
       "description": "CWE-1068"
     },
     "sources": "",
-    "how to": "",
     "id": "item-44"
   },
   {
+    "priority group": "P12",
     "incubating": "Expected",
     "active": "Expected",
     "retiring": "N/A",
+    "slug": "upgradePathDocs",
+    "title": "Support Older Versions or Provide Upgrade Paths",
     "section": "5. Vulnerability Management",
-    "c-scrm?": "Y",
-    "item": "Commonly Used Older Versions Supported or Upgrade Path Provided/Documented",
-    "priority group": "12",
+    "description": "Commonly Used Older Versions Supported or Upgrade Path Provided/Documented",
+    "how to": "",
+    "c-scrm": "Y",
     "mitre": "",
     "sources": {
       "url": "https://www.bestpractices.dev/en/criteria?details=true&rationale=true#1.maintenance_or_update",
       "description": "OpenSSF Best Practices Badge Silver Level [maintenance_or_update]"
     },
-    "how to": "",
     "id": "item-45"
   },
   {
+    "priority group": "P12",
     "incubating": "Deferrable",
     "active": "Expected",
     "retiring": "N/A",
+    "slug": "softwareArchitectureDocs",
+    "title": "Document Software Architecture",
     "section": "8. Code Review",
-    "c-scrm?": "",
-    "item": "[For Projects with Two or more Maintainers] Document Software Architecture",
-    "priority group": "12",
+    "description": "[For Projects with Two or more Maintainers] Document Software Architecture",
+    "how to": "",
+    "c-scrm": "",
     "mitre": {
       "url": "https://cwe.mitre.org/data/definitions/1053.html",
       "description": "CWE-1053"
@@ -937,36 +1032,40 @@
       "url": "https://www.bestpractices.dev/en/criteria?details=true&rationale=true#1.documentation_architecture",
       "description": "OpenSSF Best Practices Badge Silver Level [documentation_architecture]"
     },
-    "how to": "",
     "id": "item-46"
   },
   {
+    "priority group": "P12",
     "incubating": "Deferrable",
     "active": "Expected",
     "retiring": "N/A",
+    "slug": "ciAndCdPipelineAsCode",
+    "title": "Automate CI/CD Steps in Code-Based Pipelines",
     "section": "9. Source Control",
-    "c-scrm?": "Y",
-    "item": "CI/CD steps should all be automated through a pipeline defined as code",
-    "priority group": "12",
+    "description": "CI/CD steps should all be automated through a pipeline defined as code",
+    "how to": {
+      "url": "https://docs.github.com/en/actions/publishing-packages/publishing-nodejs-packages",
+      "description": "Github Docs"
+    },
+    "c-scrm": "Y",
     "mitre": "",
     "sources": {
       "url": "https://github.com/cncf/tag-security/blob/main/supply-chain-security/supply-chain-security-paper/sscsp.md#build-and-related-continuous-integrationcontinuous-delivery-steps-should-all-be-automated-through-a-pipeline-defined-as-code",
       "description": "CNCF SSCP 1.0 #158"
     },
-    "how to": {
-      "url": "https://docs.github.com/en/actions/publishing-packages/publishing-nodejs-packages",
-      "description": "Github Docs"
-    },
     "id": "item-47"
   },
   {
+    "priority group": "P13",
     "incubating": "Deferrable",
     "active": "Expected",
     "retiring": "N/A",
+    "slug": "pinActionsToSHA",
+    "title": "Pin Actions with Secrets to Full-Length Commit SHAs",
     "section": "4. Github Workflows",
-    "c-scrm?": "Y",
-    "item": "Pin Actions with Access to Secrets to a Full Length Commit SHA",
-    "priority group": "13",
+    "description": "Pin Actions with Access to Secrets to a Full Length Commit SHA",
+    "how to": "",
+    "c-scrm": "Y",
     "mitre": {
       "url": "https://cwe.mitre.org/data/definitions/1357.html",
       "description": "CWE-1357"
@@ -975,109 +1074,103 @@
       "url": "https://securitylab.github.com/research/github-actions-building-blocks/",
       "description": "Github Docs"
     },
-    "how to": "",
     "id": "item-48"
   },
   {
+    "priority group": "P14",
     "incubating": "Expected",
     "active": "Expected",
     "retiring": "Expected",
+    "slug": "automateDependencyManagement",
+    "title": "Automate Monitoring of Outdated Dependencies",
     "section": "10. Dependency Inventory",
-    "c-scrm?": "Y",
-    "item": "Automated Process is Used to Monitor for and Maintain a List of Out of Date Dependencies",
-    "priority group": "14",
+    "description": "Automated Process is Used to Monitor for and Maintain a List of Out of Date Dependencies",
+    "how to": {
+      "url": "https://socket.dev/",
+      "description": "Socket.Dev"
+    },
+    "c-scrm": "Y",
     "mitre": "",
     "sources": {
       "url": "https://scvs.owasp.org/scvs/v5-component-analysis/",
       "description": "OWASP SCVS L1 5.7"
     },
-    "how to": {
-      "url": "https://socket.dev/",
-      "description": "Socket.Dev"
-    },
     "id": "item-49"
   },
   {
+    "priority group": "P14",
     "incubating": "Expected",
     "active": "Expected",
     "retiring": "Expected",
+    "slug": "machineReadableDependencies",
+    "title": "Provide Machine-Readable Dependency Lists",
     "section": "10. Dependency Inventory",
-    "c-scrm?": "Y",
-    "item": "[Freestanding Applications Only] A Machine Readable List of all Direct and Transitive Dependencies is Available for the Software",
-    "priority group": "14",
+    "description": "[Freestanding Applications Only] A Machine Readable List of all Direct and Transitive Dependencies is Available for the Software",
+    "how to": {
+      "url": "https://docs.github.com/en/code-security/supply-chain-security/understanding-your-software-supply-chain/about-supply-chain-security#what-is-the-dependency-graph",
+      "description": "Github Docs"
+    },
+    "c-scrm": "Y",
     "mitre": "",
     "sources": {
       "url": "https://scvs.owasp.org/scvs/v1-inventory/#verification-requirements",
       "description": "OWASP SCVS L1 1.3"
     },
-    "how to": {
-      "url": "https://docs.github.com/en/code-security/supply-chain-security/understanding-your-software-supply-chain/about-supply-chain-security#what-is-the-dependency-graph",
-      "description": "Github Docs"
-    },
     "id": "item-50"
   },
   {
+    "priority group": "P14",
     "incubating": "Expected",
     "active": "Expected",
     "retiring": "Expected",
+    "slug": "identifyModifiedDependencies",
+    "title": "Uniquely Identify Modified Dependencies",
     "section": "10. Dependency Inventory",
-    "c-scrm?": "Y",
-    "item": "Modified dependencies are uniquely identified and distinct from origin dependency",
-    "priority group": "14",
+    "description": "Modified dependencies are uniquely identified and distinct from origin dependency",
+    "how to": "",
+    "c-scrm": "Y",
     "mitre": "",
     "sources": {
       "url": "https://scvs.owasp.org/scvs/v6-pedigree-and-provenance/",
       "description": "OWASP SCVS L2 6.5"
     },
-    "how to": "",
     "id": "item-51"
   },
   {
+    "priority group": "P14",
     "incubating": "Expected",
     "active": "Expected",
     "retiring": "N/A",
+    "slug": "annualDependencyRefresh",
+    "title": "Refresh Dependencies with Annual Releases",
     "section": "5. Vulnerability Management",
-    "c-scrm?": "Y",
-    "item": "A new release to refresh dependencies occurs at least annually",
-    "priority group": "14",
+    "description": "A new release to refresh dependencies occurs at least annually",
+    "how to": "",
+    "c-scrm": "Y",
     "mitre": "",
     "sources": {
       "url": "https://www.bestpractices.dev/en/criteria?details=true&rationale=true#0.maintained",
       "description": "OpenSSF Best Practices Badge Passing Level [maintained]"
     },
-    "how to": "",
     "id": "item-52"
   },
   {
+    "priority group": "R1",
     "incubating": "Recommended",
     "active": "Recommended",
     "retiring": "Recommended",
+    "slug": "useHwKeyGithubAccess",
+    "title": "Use AAL2/3 Passkeys for GitHub Access",
     "section": "1. User Authentication",
-    "c-scrm?": "Y",
-    "item": "Github.com: Use a passkey (AAL2) or hardware key (AAL3) that activates using a password or biometrics",
-    "priority group": "Rec 1",
-    "mitre": {
-      "url": "https://cwe.mitre.org/data/definitions/308.html",
-      "description": "CWE-308"
-    },
-    "sources": {
-      "url": "https://github.com/ossf/great-mfa-project/blob/main/security-rationale.md",
-      "description": "OpenSSF Great MFA Project Security Rationale"
+    "description": {
+      "url": "http://github.com/",
+      "description": "Github.com"
     },
     "how to": {
       "url": "https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication#configuring-two-factor-authentication-using-a-passkey",
       "description": "Github Docs"
     },
-    "id": "item-53"
-  },
-  {
-    "incubating": "Recommended",
-    "active": "Recommended",
-    "retiring": "Recommended",
-    "section": "1. User Authentication",
-    "c-scrm?": "Y",
-    "item": "Non-Interactive Github: Use a passkey (AAL2) or hardware key (AAL3) that activates using a password or biometrics",
-    "priority group": "Rec 1",
+    "c-scrm": "Y",
     "mitre": {
       "url": "https://cwe.mitre.org/data/definitions/308.html",
       "description": "CWE-308"
@@ -1086,20 +1179,22 @@
       "url": "https://github.com/ossf/great-mfa-project/blob/main/security-rationale.md",
       "description": "OpenSSF Great MFA Project Security Rationale"
     },
+    "id": "item-53"
+  },
+  {
+    "priority group": "R1",
+    "incubating": "Recommended",
+    "active": "Recommended",
+    "retiring": "Recommended",
+    "slug": "useHwKeyGithubNonInteractive",
+    "title": "Use AAL2/3 Passkeys for Non-Interactive GitHub Access",
+    "section": "1. User Authentication",
+    "description": "Non-Interactive Github: Use a passkey (AAL2) or hardware key (AAL3) that activates using a password or biometrics",
     "how to": {
       "url": "https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#generating-a-new-ssh-key-for-a-hardware-security-key",
       "description": "Github Docs"
     },
-    "id": "item-54"
-  },
-  {
-    "incubating": "Recommended",
-    "active": "Recommended",
-    "retiring": "Recommended",
-    "section": "1. User Authentication",
-    "c-scrm?": "Y",
-    "item": "All Other Contexts: Use a passkey (AAL2) or hardware key (AAL3) that activates using a password or biometrics",
-    "priority group": "Rec 1",
+    "c-scrm": "Y",
     "mitre": {
       "url": "https://cwe.mitre.org/data/definitions/308.html",
       "description": "CWE-308"
@@ -1108,17 +1203,40 @@
       "url": "https://github.com/ossf/great-mfa-project/blob/main/security-rationale.md",
       "description": "OpenSSF Great MFA Project Security Rationale"
     },
-    "how to": "",
-    "id": "item-55"
+    "id": "item-54"
   },
   {
+    "priority group": "R1",
     "incubating": "Recommended",
     "active": "Recommended",
     "retiring": "Recommended",
+    "slug": "useHwKeyOtherContexts",
+    "title": "Use AAL2/3 Passkeys in All Other Contexts",
+    "section": "1. User Authentication",
+    "description": "All Other Contexts: Use a passkey (AAL2) or hardware key (AAL3) that activates using a password or biometrics",
+    "how to": "",
+    "c-scrm": "Y",
+    "mitre": {
+      "url": "https://cwe.mitre.org/data/definitions/308.html",
+      "description": "CWE-308"
+    },
+    "sources": {
+      "url": "https://github.com/ossf/great-mfa-project/blob/main/security-rationale.md",
+      "description": "OpenSSF Great MFA Project Security Rationale"
+    },
+    "id": "item-55"
+  },
+  {
+    "priority group": "R2",
+    "incubating": "Recommended",
+    "active": "Recommended",
+    "retiring": "Recommended",
+    "slug": "forkWorkflowApproval",
+    "title": "Require Approval for Forked Workflow Changes",
     "section": "4. Github Workflows",
-    "c-scrm?": "Y",
-    "item": "Limit changes from forks to workflows by requiring approval for all outside collaborators",
-    "priority group": "Rec 2",
+    "description": "Limit changes from forks to workflows by requiring approval for all outside collaborators",
+    "how to": "",
+    "c-scrm": "Y",
     "mitre": {
       "url": "https://capec.mitre.org/data/definitions/180.html",
       "description": "CAPEC-180"
@@ -1127,17 +1245,22 @@
       "url": "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository#controlling-changes-from-forks-to-workflows-in-public-repositories",
       "description": "Github Docs"
     },
-    "how to": "",
     "id": "item-56"
   },
   {
+    "priority group": "R2",
     "incubating": "Recommended",
     "active": "Recommended",
     "retiring": "Recommended",
+    "slug": "workflowSecurityScanner",
+    "title": "Use Workflow Security Scanners",
     "section": "4. Github Workflows",
-    "c-scrm?": "Y",
-    "item": "Use a Workflow Security Scanner",
-    "priority group": "Rec 2",
+    "description": "Use a Workflow Security Scanner",
+    "how to": {
+      "url": "https://github.com/step-security/secure-repo",
+      "description": "Step Security secure-repo"
+    },
+    "c-scrm": "Y",
     "mitre": {
       "url": "https://attack.mitre.org/mitigations/M1047/",
       "description": "M1047"
@@ -1146,20 +1269,22 @@
       "url": "https://github.com/ossf/scorecard/blob/main/docs/checks.md#token-permissions",
       "description": "OpenSSF Scorecard"
     },
-    "how to": {
-      "url": "https://github.com/step-security/secure-repo",
-      "description": "Step Security secure-repo"
-    },
     "id": "item-57"
   },
   {
+    "priority group": "R2",
     "incubating": "Recommended",
     "active": "Recommended",
     "retiring": "Recommended",
+    "slug": "runnerSecurityScanner",
+    "title": "Use GitHub Runner Security Scanners",
     "section": "4. Github Workflows",
-    "c-scrm?": "Y",
-    "item": "Use a Github Runner Security Scanner",
-    "priority group": "Rec 2",
+    "description": "Use a Github Runner Security Scanner",
+    "how to": {
+      "url": "https://github.com/step-security/harden-runner",
+      "description": "Step Security harden-runner"
+    },
+    "c-scrm": "Y",
     "mitre": {
       "url": "https://attack.mitre.org/mitigations/M1047/",
       "description": "M1047"
@@ -1168,20 +1293,19 @@
       "url": "https://docs.github.com/en/actions/security-guides/security-hardening-for-github-actions#hardening-for-self-hosted-runners",
       "description": "Github Action Hardening Docs"
     },
-    "how to": {
-      "url": "https://github.com/step-security/harden-runner",
-      "description": "Step Security harden-runner"
-    },
     "id": "item-58"
   },
   {
+    "priority group": "R3",
     "incubating": "Recommended",
     "active": "Recommended",
     "retiring": "N/A",
+    "slug": "activeAdminsSixMonths",
+    "title": "Require Active Admins in GitHub Org (Activity in 6 Months)",
     "section": "2. User Account Permissions",
-    "c-scrm?": "Y",
-    "item": "Github Organization Admins Should Have Activity In The Last 6 Months",
-    "priority group": "Rec 3",
+    "description": "Github Organization Admins Should Have Activity In The Last 6 Months",
+    "how to": "",
+    "c-scrm": "Y",
     "mitre": {
       "url": "https://attack.mitre.org/mitigations/M1026/",
       "description": "M1026"
@@ -1190,17 +1314,19 @@
       "url": "https://best.openssf.org/SCM-BestPractices/github/member/stale_admin_found.html",
       "description": "OpenSSF SCM Best Practices"
     },
-    "how to": "",
     "id": "item-59"
   },
   {
+    "priority group": "R3",
     "incubating": "Recommended",
     "active": "Recommended",
     "retiring": "N/A",
+    "slug": "activeWritersSixMonths",
+    "title": "Require Active Members with Write Access (Activity in 6 Months)",
     "section": "2. User Account Permissions",
-    "c-scrm?": "Y",
-    "item": "Github Organization Members with Write Permissions Should Have Activity In The Last 6 Months",
-    "priority group": "Rec 3",
+    "description": "Github Organization Members with Write Permissions Should Have Activity In The Last 6 Months",
+    "how to": "",
+    "c-scrm": "Y",
     "mitre": {
       "url": "https://attack.mitre.org/mitigations/M1026/",
       "description": "M1026"
@@ -1209,17 +1335,22 @@
       "url": "https://best.openssf.org/SCM-BestPractices/github/member/stale_member_found.html",
       "description": "OpenSSF SCM Best Practices"
     },
-    "how to": "",
     "id": "item-60"
   },
   {
+    "priority group": "R4",
     "incubating": "Recommended",
     "active": "Recommended",
     "retiring": "Recommended",
+    "slug": "PRsBeforeMerge",
+    "title": "Require Pull Requests Before Merging",
     "section": "9. Source Control",
-    "c-scrm?": "Y",
-    "item": "Require Pull Requests before Merging",
-    "priority group": "Rec 4",
+    "description": "Require Pull Requests before Merging",
+    "how to": {
+      "url": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches#require-pull-request-reviews-before-merging",
+      "description": "Github Docs"
+    },
+    "c-scrm": "Y",
     "mitre": {
       "url": "https://cwe.mitre.org/data/definitions/778.html",
       "description": "CWE-778"
@@ -1228,99 +1359,85 @@
       "url": "https://github.com/ossf/scorecard/blob/main/docs/checks.md#branch-protection",
       "description": "OpenSSF Scorecard"
     },
-    "how to": {
-      "url": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches#require-pull-request-reviews-before-merging",
-      "description": "Github Docs"
-    },
     "id": "item-61"
   },
   {
+    "priority group": "R4",
     "incubating": "Recommended",
     "active": "Recommended",
     "retiring": "Recommended",
+    "slug": "commitSignoffForWeb",
+    "title": "Enforce Commit Signoff for Web-Based Commits",
     "section": "9. Source Control",
-    "c-scrm?": "Y",
-    "item": "Github Org Requires Commit Signoff for Web-Based Commits",
-    "priority group": "Rec 4",
-    "mitre": "",
-    "sources": {
-      "url": "https://github.com/cncf/tag-security/blob/main/supply-chain-security/supply-chain-security-paper/sscsp.md#require-signed-commits",
-      "description": "CNCF SSCP 1.0 #325"
-    },
+    "description": "Github Org Requires Commit Signoff for Web-Based Commits",
     "how to": {
       "url": "https://docs.github.com/en/organizations/managing-organization-settings/managing-the-commit-signoff-policy-for-your-organization#managing-compulsory-commit-signoffs-for-your-organization",
       "description": "Github Docs"
     },
-    "id": "item-62"
-  },
-  {
-    "incubating": "Recommended",
-    "active": "Recommended",
-    "retiring": "Recommended",
-    "section": "9. Source Control",
-    "c-scrm?": "Y",
-    "item": "Require Signed Commits",
-    "priority group": "Rec 4",
+    "c-scrm": "Y",
     "mitre": "",
     "sources": {
       "url": "https://github.com/cncf/tag-security/blob/main/supply-chain-security/supply-chain-security-paper/sscsp.md#require-signed-commits",
       "description": "CNCF SSCP 1.0 #325"
     },
+    "id": "item-62"
+  },
+  {
+    "priority group": "R4",
+    "incubating": "Recommended",
+    "active": "Recommended",
+    "retiring": "Recommended",
+    "slug": "requireSignedCommits",
+    "title": "Require Signed Commits",
+    "section": "9. Source Control",
+    "description": "Require Signed Commits",
     "how to": {
       "url": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches#require-signed-commits",
       "description": "Github Docs"
     },
+    "c-scrm": "Y",
+    "mitre": "",
+    "sources": {
+      "url": "https://github.com/cncf/tag-security/blob/main/supply-chain-security/supply-chain-security-paper/sscsp.md#require-signed-commits",
+      "description": "CNCF SSCP 1.0 #325"
+    },
     "id": "item-63"
   },
   {
+    "priority group": "R5",
     "incubating": "Recommended",
     "active": "Recommended",
     "retiring": "Recommended",
+    "slug": "includePackageLock",
+    "title": "Include package-lock.json in Releases (Freestanding Apps)",
     "section": "10. Dependency Inventory",
-    "c-scrm?": "Y",
-    "item": "[Freestanding Applications Only] Commit a package-lock.json file with each release",
-    "priority group": "Rec 5",
+    "description": "[Freestanding Applications Only] Commit a package-lock.json file with each release",
+    "how to": {
+      "url": "https://docs.npmjs.com/cli/v10/commands/npm-sbom",
+      "description": "npm Docs"
+    },
+    "c-scrm": "Y",
     "mitre": "",
     "sources": {
       "url": "https://github.com/ossf/scorecard/blob/main/docs/checks.md#sbom",
       "description": "OpenSSF Scorecard"
     },
-    "how to": {
-      "url": "https://docs.npmjs.com/cli/v10/commands/npm-sbom",
-      "description": "npm Docs"
-    },
     "id": "item-64"
   },
   {
+    "priority group": "R6",
     "incubating": "Recommended",
     "active": "Recommended",
     "retiring": "N/A",
+    "slug": "requireTwoPartyReview",
+    "title": "Require Two-Party Review (Two+ Maintainers)",
     "section": "8. Code Review",
-    "c-scrm?": "Y",
-    "item": "[For Projects with Two or more Maintainers] Require Two Party Review",
-    "priority group": "Rec 6",
-    "mitre": {
-      "url": "https://capec.mitre.org/data/definitions/670.html",
-      "description": "CAPEC-670"
-    },
-    "sources": {
-      "url": "https://github.com/ossf/scorecard/blob/main/docs/checks.md#code-review",
-      "description": "OpenSSF Scorecard"
-    },
+    "description": "[For Projects with Two or more Maintainers] Require Two Party Review",
     "how to": {
       "url": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches#require-pull-request-reviews-before-merging",
       "description": "Github Docs"
     },
-    "id": "item-65"
-  },
-  {
-    "incubating": "Recommended",
-    "active": "Recommended",
-    "retiring": "N/A",
-    "section": "8. Code Review",
-    "c-scrm?": "Y",
-    "item": "[For Projects with Four or more Maintainers] Require Code Owners Review",
-    "priority group": "Rec 6",
+    "c-scrm": "Y",
     "mitre": {
       "url": "https://capec.mitre.org/data/definitions/670.html",
       "description": "CAPEC-670"
@@ -1329,20 +1446,46 @@
       "url": "https://github.com/ossf/scorecard/blob/main/docs/checks.md#code-review",
       "description": "OpenSSF Scorecard"
     },
+    "id": "item-65"
+  },
+  {
+    "priority group": "R6",
+    "incubating": "Recommended",
+    "active": "Recommended",
+    "retiring": "N/A",
+    "slug": "requireCodeOwnersReviewForLargeTeams",
+    "title": "Require Code Owners Review (Four+ Maintainers)",
+    "section": "8. Code Review",
+    "description": "[For Projects with Four or more Maintainers] Require Code Owners Review",
     "how to": {
       "url": "https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning",
       "description": "Github Docs"
     },
+    "c-scrm": "Y",
+    "mitre": {
+      "url": "https://capec.mitre.org/data/definitions/670.html",
+      "description": "CAPEC-670"
+    },
+    "sources": {
+      "url": "https://github.com/ossf/scorecard/blob/main/docs/checks.md#code-review",
+      "description": "OpenSSF Scorecard"
+    },
     "id": "item-66"
   },
   {
+    "priority group": "R6",
     "incubating": "Recommended",
     "active": "Recommended",
     "retiring": "Recommended",
+    "slug": "requirePRApprovalForMainline",
+    "title": "Require Approved PRs for Mainline Commits (Two+ Maintainers)",
     "section": "9. Source Control",
-    "c-scrm?": "Y",
-    "item": "[For Projects with Two or more Maintainers] Require Approved PRs for all commits to mainline branches",
-    "priority group": "Rec 6",
+    "description": "[For Projects with Two or more Maintainers] Require Approved PRs for all commits to mainline branches",
+    "how to": {
+      "url": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches",
+      "description": "Github Docs"
+    },
+    "c-scrm": "Y",
     "mitre": {
       "url": "https://capec.mitre.org/data/definitions/670.html",
       "description": "CAPEC-670"
@@ -1351,20 +1494,19 @@
       "url": "https://github.com/ossf/scorecard/blob/main/docs/checks.md#branch-protection",
       "description": "OpenSSF Scorecard"
     },
-    "how to": {
-      "url": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches",
-      "description": "Github Docs"
-    },
     "id": "item-67"
   },
   {
+    "priority group": "R7",
     "incubating": "Recommended",
     "active": "Recommended",
     "retiring": "Recommended",
+    "slug": "limitOrgOwners",
+    "title": "Limit GitHub Org Owners to Fewer Than Three",
     "section": "2. User Account Permissions",
-    "c-scrm?": "Y",
-    "item": "Limit Number of Github Org Owners (ideally Fewer Than Three)",
-    "priority group": "Rec 7",
+    "description": "Limit Number of Github Org Owners (ideally Fewer Than Three)",
+    "how to": "",
+    "c-scrm": "Y",
     "mitre": {
       "url": "https://attack.mitre.org/mitigations/M1026/",
       "description": "M1026"
@@ -1373,17 +1515,19 @@
       "url": "https://best.openssf.org/SCM-BestPractices/github/member/organization_has_too_many_admins.html",
       "description": "OpenSSF SCM Best Practices"
     },
-    "how to": "",
     "id": "item-68"
   },
   {
+    "priority group": "R7",
     "incubating": "Recommended",
     "active": "Recommended",
     "retiring": "Recommended",
+    "slug": "limitRepoAdmins",
+    "title": "Limit GitHub Repo Admins to Fewer Than Three",
     "section": "2. User Account Permissions",
-    "c-scrm?": "Y",
-    "item": "Limit Number of Github Repository Admins (ideally Fewer Than Three)",
-    "priority group": "Rec 7",
+    "description": "Limit Number of Github Repository Admins (ideally Fewer Than Three)",
+    "how to": "",
+    "c-scrm": "Y",
     "mitre": {
       "url": "https://capec.mitre.org/data/definitions/180.html",
       "description": "CAPEC-180"
@@ -1392,39 +1536,42 @@
       "url": "https://best.openssf.org/SCM-BestPractices/github/repository/repository_has_too_many_admins.html",
       "description": "OpenSSF SCM Best Practices"
     },
-    "how to": "",
     "id": "item-69"
   },
   {
+    "priority group": "R8",
     "incubating": "Recommended",
     "active": "Recommended",
     "retiring": "N/A",
+    "slug": "patchExploitableHighVulns14Days",
+    "title": "Patch Critical/High Vulnerabilities in 14 Days",
     "section": "5. Vulnerability Management",
-    "c-scrm?": "",
-    "item": "Actively Exploited Critical and High Vulnerabilities Patched within 14 Days",
-    "priority group": "Rec 8",
+    "description": "Actively Exploited Critical and High Vulnerabilities Patched within 14 Days",
+    "how to": "",
+    "c-scrm": "",
     "mitre": "",
     "sources": {
       "url": "https://www.bestpractices.dev/en/criteria#0.vulnerabilities_critical_fixed",
       "description": "OpenSSF Best Practices Badge Passing Level [vulnerabilities_critical_fixed]"
     },
-    "how to": "",
     "id": "item-70"
   },
   {
+    "priority group": "R8",
     "incubating": "Recommended",
     "active": "Recommended",
     "retiring": "N/A",
+    "slug": "patchExploitableNoncCriticalVulns60Days",
+    "title": "Patch Non-Critical Vulnerabilities in 60 Days",
     "section": "5. Vulnerability Management",
-    "c-scrm?": "",
-    "item": "Non-Critical Expoitable Vulnerabilities Patched within 60 Days",
-    "priority group": "Rec 8",
+    "description": "Non-Critical Expoitable Vulnerabilities Patched within 60 Days",
+    "how to": "",
+    "c-scrm": "",
     "mitre": "",
     "sources": {
       "url": "https://www.bestpractices.dev/en/criteria#0.vulnerabilities_fixed_60_days",
       "description": "OpenSSF Best Practices Badge Silver Level [vulnerabilities_fixed_60_days]"
     },
-    "how to": "",
     "id": "item-71"
   }
 ]
