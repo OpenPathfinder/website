@@ -93,7 +93,7 @@ jobs:
             --head chore/update-content \
             --title "[AUTO] Sync with dashboard database" \
             --body "This PR updates the content based on the current state of the Dashboard." \
-            --assignee "${{ github.actor }}
+            --assignee "${{ github.actor }}" \
             --reviewer "${{ github.actor }}"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
