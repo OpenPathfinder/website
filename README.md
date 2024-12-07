@@ -39,13 +39,10 @@ This command generates static content into the `build` directory and can be serv
 ## Manage Changes
 
 
-### Update the items
+### Update the compliance checks
 
-1. Go to https://docs.google.com/spreadsheets/d/1GwIsAudAn89xv9DAbr1HUaY4KEVBsYfg--_1cW0uIB0/edit?gid=0#gid=0
-2. Update the items
-3. Download the sheet as HTML
-4. Replace the content of `data/standards.html` with the new content
-5. Run the script `npm run extract-standards` to extract the items from the HTML and update the `data/standards.json` file
+1. Go to [Actions: Sync and update Compliance Checks](https://github.com/secure-dashboards/openjs-security-program-standards/actions/workflows/sync_checks.yml) and run the action manually from the `main` branch. [how-to](https://docs.github.com/en/actions/managing-workflow-runs-and-deployments/managing-workflow-runs/manually-running-a-workflow)
+2. This will generate a PR with the title `[AUTO] Sync with dashboard database` and it will assign it to you ([direct access](https://github.com/secure-dashboards/openjs-security-program-standards/pulls?q=sort%3Aupdated-desc+is%3Apr+is%3Aopen++%5BAUTO%5D+Sync+with+dashboard+database+)). Please review the content and merge it when you feel ready.
 
 ### Update the website
 
