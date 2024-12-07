@@ -1,0 +1,99 @@
+name: Sync and update Compliance Checks
+
+on:
+  # Manually trigger the workflow
+  workflow_dispatch:
+
+permissions:
+  # We will create a pull request, so we need write permissions
+  pull-requests: write
+  # We will be committing to the repository, so we need write permissions
+  contents: write
+
+jobs:
+  sync-and-update:
+    runs-on: ubuntu-latest
+
+    services:
+      postgres:
+        image: postgres:17.2
+        env:
+          POSTGRES_DB: dashboard
+          POSTGRES_USER: openjs
+          POSTGRES_PASSWORD: password
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd="pg_isready -U openjs"
+          --health-interval=10s
+          --health-timeout=5s
+          --health-retries=5
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Create or Checkout Branch (chore/update-content)
+        run: |
+          git fetch origin chore/update-content || true
+          git checkout chore/update-content || git checkout -b chore/update-content
+
+      - name: Clone OpenJS Foundation Dashboard
+        run: |
+          git clone https://github.com/secure-dashboards/openjs-foundation-dashboard.git temp-openjs-dashboard
+          cd temp-openjs-dashboard
+          npm install
+          npm run db:migrate
+          psql -U openjs -d dashboard -c "\copy (SELECT json_agg(t) FROM compliance_checks t) TO '../data/checks.json'"
+          cd ..
+          rm -rf temp-openjs-dashboard
+        env:
+          PGHOST: localhost
+          PGUSER: openjs
+          PGPASSWORD: password
+          PGDATABASE: dashboard
+
+      - name: Debug Git Changes
+        run: |
+          git status
+          git diff
+
+      - name: Commit Updated Checks
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add -A
+          git diff --cached --quiet || git commit -m "chore: sync with OpenJS Foundation Dashboard"
+
+      - name: Install Dependencies and update dynamic content
+        run: |
+          npm install
+          npm run populate-details
+          npm run populate-implementations
+
+      - name: Debug Git Changes
+        run: |
+          git status
+          git diff
+
+      - name: Commit and Push Changes
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add -A
+          git diff --cached --quiet || git commit -m "chore: auto-update content"
+          git push origin chore/update-content
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Create and Assign Pull Request
+        run: |
+          gh pr create \
+            --base main \
+            --head chore/update-content \
+            --title "[AUTO] Sync with dashboard database" \
+            --body "This PR updates the content based on the current state of the Dashboard." \
+            --assignee "${{ github.actor }}
+            --reviewer "${{ github.actor }}"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
