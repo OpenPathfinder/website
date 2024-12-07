@@ -44,7 +44,9 @@ jobs:
           cd temp-openjs-dashboard
           npm install
           npm run db:migrate
-          psql -U openjs -d dashboard -c "\copy (SELECT json_agg(t) FROM compliance_checks t) TO '../data/checks.json'"
+          mkdir -p output
+          npm run db:export-checks
+          cp output/checks.json ../data/checks.json
           cd ..
           rm -rf temp-openjs-dashboard
         env:
