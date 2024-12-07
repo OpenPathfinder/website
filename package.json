@@ -14,7 +14,6 @@
         "write-heading-ids": "docusaurus write-heading-ids",
         "populate-details": "node scripts/populate-details.js",
         "populate-implementations": "node scripts/populate-implementations.js",
-        "extract-standards": "node scripts/convert-html-to-json.js",
         "release": "standard-version",
         "release:minor": "standard-version --release-as minor",
         "release:patch": "standard-version --release-as patch",
