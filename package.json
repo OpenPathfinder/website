@@ -33,7 +33,6 @@
         "clsx": "1.1.1",
         "husky": "7.0.4",
         "jest": "27.5.1",
-        "jsdom": "^24.1.0",
         "prism-react-renderer": "1.2.1",
         "react": "17.0.1",
         "react-dom": "17.0.1",
