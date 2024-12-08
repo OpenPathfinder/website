@@ -48,31 +48,40 @@ const renderDetails = (check) => {
     content += `${howToDetails}\n`
   }
   content += `- Created at ${check.created_at}\n`
-  content += `- Updated at ${check.updated_at}\n`
+  content += `- Updated at ${check.updated_at}`
   return content
 }
 
 // Prepare the markdown files
 checks.forEach((check, index) => {
   const fileContent = `---
+<!-- METADATA:START -->
 sidebar_position: ${index + 1}
 id: ${check.id}
 title: ${check.title}
 slug: /details/${check.code_name}
+<!-- METADATA:END -->
 ---
 
+<!-- TITLE:START -->
 # ${check.title}
+<!-- TITLE:END -->
 
 ## Use Case
+<!-- LEVELS:START -->
 - Incubating: ${check.level_incubating_status}
 - Active: ${check.level_active_status}
 - Retiring: ${check.level_retiring_status}
+<!-- LEVELS:END -->
 
+<!-- DESCRIPTION:START -->
 ## Description
-
 ${check.description}
+<!-- DESCRIPTION:END -->
 
+<!-- DETAILS:START -->
 ${renderDetails(check)}
+<!-- DETAILS:END -->
 `
   const detination = path.join(process.cwd(), `docs/details/${check.code_name}.mdx`)
   writeFileSync(detination, fileContent)
