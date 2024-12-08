@@ -57,3 +57,17 @@ npm run populate-implementations
 
 This will autopolulate the details and implementations sections of the website, respectively. So make sure to commit the changes.
 
+### Improve the content via PR(s)
+
+If you want to enhance any page, you can do so as you would in any other project (via a Pull Request, [example](https://github.com/secure-dashboards/openjs-security-program-standards/pull/9)). However, please note certain rules, as some parts of the files are dynamically generated, and your changes could be overwritten.
+
+**Rules**
+1. Metadata is added automatically. Manual additions or modifications to metadata are not allowed.
+2. You can contribute any content to any file, but avoid making changes within the sections enclosed by specific tags, as these sections are dynamically generated. For example:
+    ```plaintext
+    OK
+    <!-- DESCRIPTION:START -->
+    AVOID (AUTOMATED)
+    <!-- DESCRIPTION:END -->
+    OK
+    ```

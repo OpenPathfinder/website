@@ -29,6 +29,7 @@
         "@docusaurus/preset-classic": "2.0.0-beta.14",
         "@mdx-js/react": "1.6.21",
         "@snyk/protect": "1.893.0",
+        "@ulisesgascon/text-tags-manager": "2.0.0",
         "clsx": "1.1.1",
         "husky": "7.0.4",
         "jest": "27.5.1",

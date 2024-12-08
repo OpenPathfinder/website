@@ -1,7 +1,18 @@
-const { writeFileSync } = require('fs')
+const { writeFileSync, existsSync, readFileSync } = require('fs')
+const { updateOrCreateSegment } = require('@ulisesgascon/text-tags-manager')
 const path = require('path')
 
 const checks = require('../data/checks.json')
+const levelsStartTag = '<!-- LEVELS:START -->'
+const levelsEndTag = '<!-- LEVELS:END -->'
+const descriptionStartTag = '<!-- DESCRIPTION:START -->'
+const descriptionEndTag = '<!-- DESCRIPTION:END -->'
+const detailsStartTag = '<!-- DETAILS:START -->'
+const detailsEndTag = '<!-- DETAILS:END -->'
+// @TODO: Move this function to a shared file
+const replaceMetadata = (fileContent, metadata) => {
+  return fileContent.replace(/---[^]*?---/, metadata)
+}
 
 const addImplementationDetails = (check) => {
   if (!check.implementation_type) {
@@ -48,32 +59,70 @@ const renderDetails = (check) => {
     content += `${howToDetails}\n`
   }
   content += `- Created at ${check.created_at}\n`
-  content += `- Updated at ${check.updated_at}\n`
+  content += `- Updated at ${check.updated_at}`
   return content
 }
 
 // Prepare the markdown files
 checks.forEach((check, index) => {
-  const fileContent = `---
+  const metadata = `---
 sidebar_position: ${index + 1}
 id: ${check.id}
 title: ${check.title}
 slug: /details/${check.code_name}
----
-
-# ${check.title}
-
-## Use Case
+---`.trim()
+  const levelsContent = `
 - Incubating: ${check.level_incubating_status}
 - Active: ${check.level_active_status}
 - Retiring: ${check.level_retiring_status}
+`.trim()
+  const descriptionContent = `## Description
+${check.description}`.trim()
+  const detailsContent = renderDetails(check)
 
-## Description
+  let fileContent = `${metadata}
 
-${check.description}
+## Use Case
+${levelsStartTag}
+${levelsContent}
+${levelsEndTag}
 
-${renderDetails(check)}
+${descriptionStartTag}
+${descriptionContent}
+${descriptionEndTag}
+
+${detailsStartTag}
+${detailsContent}
+${detailsContent}
 `
-  const detination = path.join(process.cwd(), `docs/details/${check.code_name}.mdx`)
-  writeFileSync(detination, fileContent)
+  const updateContent = (currentContent) => {
+    fileContent = currentContent
+    replaceMetadata(fileContent, metadata)
+    fileContent = updateOrCreateSegment({
+      original: fileContent,
+      replacementSegment: levelsContent,
+      startTag: levelsStartTag,
+      endTag: levelsEndTag
+    })
+    fileContent = updateOrCreateSegment({
+      original: fileContent,
+      replacementSegment: descriptionContent,
+      startTag: descriptionStartTag,
+      endTag: descriptionEndTag
+    })
+    fileContent = updateOrCreateSegment({
+      original: fileContent,
+      replacementSegment: detailsContent,
+      startTag: detailsStartTag,
+      endTag: detailsEndTag
+    })
+  }
+
+  const destination = path.join(process.cwd(), `docs/details/${check.code_name}.mdx`)
+  const fileExists = existsSync(destination)
+  if (fileExists) {
+    const currentFileContent = readFileSync(destination, 'utf8')
+    updateContent(currentFileContent)
+  }
+  writeFileSync(destination, fileContent)
 })
