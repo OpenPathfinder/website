@@ -1,7 +1,18 @@
-const { writeFileSync } = require('fs')
+const { writeFileSync, existsSync, readFileSync } = require('fs')
+const { updateOrCreateSegment } = require('@ulisesgascon/text-tags-manager')
 const path = require('path')
 
 const checks = require('../data/checks.json')
+const levelsStartTag = '<!-- LEVELS:START -->'
+const levelsEndTag = '<!-- LEVELS:END -->'
+const descriptionStartTag = '<!-- DESCRIPTION:START -->'
+const descriptionEndTag = '<!-- DESCRIPTION:END -->'
+const detailsStartTag = '<!-- DETAILS:START -->'
+const detailsEndTag = '<!-- DETAILS:END -->'
+// @TODO: Move this function to a shared file
+const replaceMetadata = (fileContent, metadata) => {
+  return fileContent.replace(/---[^]*?---/, metadata)
+}
 
 const addImplementationDetails = (check) => {
   if (!check.implementation_type) {
@@ -69,21 +80,49 @@ slug: /details/${check.code_name}
 ${check.description}`.trim()
   const detailsContent = renderDetails(check)
 
-  const fileContent = `${metadata}
+  let fileContent = `${metadata}
 
 ## Use Case
-<!-- LEVELS:START -->
+${levelsStartTag}
 ${levelsContent}
-<!-- LEVELS:END -->
+${levelsEndTag}
 
-<!-- DESCRIPTION:START -->
+${descriptionStartTag}
 ${descriptionContent}
-<!-- DESCRIPTION:END -->
+${descriptionEndTag}
 
-<!-- DETAILS:START -->
+${detailsStartTag}
 ${detailsContent}
-<!-- DETAILS:END -->
+${detailsContent}
 `
-  const detination = path.join(process.cwd(), `docs/details/${check.code_name}.mdx`)
-  writeFileSync(detination, fileContent)
+  const updateContent = (currentContent) => {
+    fileContent = currentContent
+    replaceMetadata(fileContent, metadata)
+    fileContent = updateOrCreateSegment({
+      original: fileContent,
+      replacementSegment: levelsContent,
+      startTag: levelsStartTag,
+      endTag: levelsEndTag
+    })
+    fileContent = updateOrCreateSegment({
+      original: fileContent,
+      replacementSegment: descriptionContent,
+      startTag: descriptionStartTag,
+      endTag: descriptionEndTag
+    })
+    fileContent = updateOrCreateSegment({
+      original: fileContent,
+      replacementSegment: detailsContent,
+      startTag: detailsStartTag,
+      endTag: detailsEndTag
+    })
+  }
+
+  const destination = path.join(process.cwd(), `docs/details/${check.code_name}.mdx`)
+  const fileExists = existsSync(destination)
+  if (fileExists) {
+    const currentFileContent = readFileSync(destination, 'utf8')
+    updateContent(currentFileContent)
+  }
+  writeFileSync(destination, fileContent)
 })
