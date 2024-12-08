@@ -39,27 +39,29 @@ const addRow = (item) => `| ${item.section_number}. ${capitalizeWords(item.secti
 
 // Prepare the markdown files
 projectStatus.forEach((status, index) => {
-  let fileContent = `---
+  const metadata = `---
 sidebar_position: ${index + 1}
 id: ${status}
 title: ${status.charAt(0).toUpperCase() + status.slice(1)}
 slug: /implementations/${status}
----
-
-<!-- LIST:START -->
-`
-
-  fileContent += implementationPriority.map(priority => {
+---`.trim()
+  const listContent = implementationPriority.map(priority => {
     if (data[status][priority].length === 0) return ''
 
     return `
 ## ${priority.charAt(0).toUpperCase() + priority.slice(1)}
 ${addHeader()}
 ${data[status][priority].map(addRow).join('\n')}
-    `
+  `
   }).join('\n')
 
-  fileContent += '\n<!-- LIST:END -->'
+  const fileContent = `${metadata}
+<!-- LIST:START -->
+
+<!-- LIST:END -->
+${listContent}
+<!-- LIST:END -->
+`
 
   const destination = path.join(process.cwd(), `docs/implementation/${status}.mdx`)
   writeFileSync(destination, fileContent)

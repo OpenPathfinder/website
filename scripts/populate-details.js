@@ -54,27 +54,34 @@ const renderDetails = (check) => {
 
 // Prepare the markdown files
 checks.forEach((check, index) => {
-  const fileContent = `---
+  const metadata = `---
 sidebar_position: ${index + 1}
 id: ${check.id}
 title: ${check.title}
 slug: /details/${check.code_name}
----
-
-## Use Case
-<!-- LEVELS:START -->
+---`.trim()
+  const levelsContent = `
 - Incubating: ${check.level_incubating_status}
 - Active: ${check.level_active_status}
 - Retiring: ${check.level_retiring_status}
+`.trim()
+  const descriptionContent = `## Description
+${check.description}`.trim()
+  const detailsContent = renderDetails(check)
+
+  const fileContent = `${metadata}
+
+## Use Case
+<!-- LEVELS:START -->
+${levelsContent}
 <!-- LEVELS:END -->
 
 <!-- DESCRIPTION:START -->
-## Description
-${check.description}
+${descriptionContent}
 <!-- DESCRIPTION:END -->
 
 <!-- DETAILS:START -->
-${renderDetails(check)}
+${detailsContent}
 <!-- DETAILS:END -->
 `
   const detination = path.join(process.cwd(), `docs/details/${check.code_name}.mdx`)
