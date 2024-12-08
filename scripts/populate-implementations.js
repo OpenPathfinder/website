@@ -20,7 +20,7 @@ projectStatus.forEach(status => {
 
 // Populate the data object
 checks
-// @TODO: Remove this sort when the checks.json is sorted when generated in the dashboard script
+  // @TODO: Remove this sort when the checks.json is sorted when generated in the dashboard script
   .sort((a, b) => a.id - b.id)
   .forEach(item =>
     projectStatus.forEach(status => {
@@ -40,12 +40,15 @@ const addRow = (item) => `| ${item.section_number}. ${capitalizeWords(item.secti
 // Prepare the markdown files
 projectStatus.forEach((status, index) => {
   let fileContent = `---
+<!-- METADATA:START -->
 sidebar_position: ${index + 1}
 id: ${status}
 title: ${status.charAt(0).toUpperCase() + status.slice(1)}
 slug: /implementations/${status}
+<!-- METADATA:END -->
 ---
 
+<!-- LIST:START -->
 `
 
   fileContent += implementationPriority.map(priority => {
@@ -57,6 +60,8 @@ ${addHeader()}
 ${data[status][priority].map(addRow).join('\n')}
     `
   }).join('\n')
+
+  fileContent += '<!-- LIST:END -->'
 
   const destination = path.join(process.cwd(), `docs/implementation/${status}.mdx`)
   writeFileSync(destination, fileContent)
