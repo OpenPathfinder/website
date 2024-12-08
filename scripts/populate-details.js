@@ -55,17 +55,11 @@ const renderDetails = (check) => {
 // Prepare the markdown files
 checks.forEach((check, index) => {
   const fileContent = `---
-<!-- METADATA:START -->
 sidebar_position: ${index + 1}
 id: ${check.id}
 title: ${check.title}
 slug: /details/${check.code_name}
-<!-- METADATA:END -->
 ---
-
-<!-- TITLE:START -->
-# ${check.title}
-<!-- TITLE:END -->
 
 ## Use Case
 <!-- LEVELS:START -->

@@ -40,12 +40,10 @@ const addRow = (item) => `| ${item.section_number}. ${capitalizeWords(item.secti
 // Prepare the markdown files
 projectStatus.forEach((status, index) => {
   let fileContent = `---
-<!-- METADATA:START -->
 sidebar_position: ${index + 1}
 id: ${status}
 title: ${status.charAt(0).toUpperCase() + status.slice(1)}
 slug: /implementations/${status}
-<!-- METADATA:END -->
 ---
 
 <!-- LIST:START -->
@@ -61,7 +59,7 @@ ${data[status][priority].map(addRow).join('\n')}
     `
   }).join('\n')
 
-  fileContent += '<!-- LIST:END -->'
+  fileContent += '\n<!-- LIST:END -->'
 
   const destination = path.join(process.cwd(), `docs/implementation/${status}.mdx`)
   writeFileSync(destination, fileContent)
