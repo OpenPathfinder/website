@@ -1,12 +1,13 @@
 const { writeFileSync } = require('fs')
 const path = require('path')
 
-const standards = require('../data/standards.json')
+const checks = require('../data/checks.json')
 
 const projectStatus = ['incubating', 'active', 'retiring']
 const implementationPriority = ['expected', 'deferrable', 'recommended']
 const data = {}
 const files = {}
+const capitalizeWords = str => str.split(' ').map(w => w[0].toUpperCase() + w.slice(1).toLowerCase()).join(' ')
 
 // Basic structure of the data object
 projectStatus.forEach(status => {
@@ -18,19 +19,23 @@ projectStatus.forEach(status => {
 })
 
 // Populate the data object
-standards.forEach(item =>
-  projectStatus.forEach(status => {
-    const statusData = item[status]?.toLowerCase()
-    if (implementationPriority.includes(statusData)) {
-      data[status][statusData].push(item)
-    }
-  })
-)
+checks
+// @TODO: Remove this sort when the checks.json is sorted when generated in the dashboard script
+  .sort((a, b) => a.id - b.id)
+  .forEach(item =>
+    projectStatus.forEach(status => {
+      const statusKey = `level_${status}_status`
+      const statusData = item[statusKey]?.toLowerCase()
+      if (implementationPriority.includes(statusData)) {
+        data[status][statusData].push(item)
+      }
+    })
+  )
 
 const addHeader = () => `
 | Section | Item | Priority Group | Details |
 | --- | --- | --- | --- |`
-const addRow = (item) => `| ${item.section} | ${item.title} | ${item['priority group']} | [details](/details/${item.slug}) |`
+const addRow = (item) => `| ${item.section_number}. ${capitalizeWords(item.section_name)} | ${item.title} | ${item.priority_group} | [details](/details/${item.code_name}) |`
 
 // Prepare the markdown files
 projectStatus.forEach((status, index) => {
@@ -53,6 +58,6 @@ ${data[status][priority].map(addRow).join('\n')}
     `
   }).join('\n')
 
-  const detination = path.join(process.cwd(), `docs/implementation/${status}.mdx`)
-  writeFileSync(detination, fileContent)
+  const destination = path.join(process.cwd(), `docs/implementation/${status}.mdx`)
+  writeFileSync(destination, fileContent)
 })
