@@ -1,30 +1,5 @@
 [
   {
-    "id": 1,
-    "title": "Training on Secure Software Design",
-    "description": "At least One Primary Maintainer has taken TBD Training on Secure Software Design",
-    "section_number": "7",
-    "section_name": "code quality",
-    "code_name": "softwareDesignTraining",
-    "priority_group": "P0",
-    "is_c_scrm": false,
-    "level_incubating_status": "expected",
-    "level_active_status": "expected",
-    "level_retiring_status": "expected",
-    "mitre_url": "https://attack.mitre.org/mitigations/M1013/",
-    "mitre_description": "M1013",
-    "how_to_url": null,
-    "how_to_description": null,
-    "sources_url": "https://www.bestpractices.dev/en/criteria?details=true&rationale=true#0.know_secure_design",
-    "sources_description": "OpenSSF Best Practices Badge Passing Level [know_secure_design]",
-    "implementation_status": "pending",
-    "implementation_type": null,
-    "implementation_details_reference": null,
-    "details_url": "https://openjs-security-program-standards.netlify.app/details/softwareDesignTraining",
-    "created_at": "2024-12-07T23:06:38.197Z",
-    "updated_at": "2024-12-07T23:06:38.197Z"
-  },
-  {
     "id": 2,
     "title": "Training on OWASP Top 10 or Equivalent",
     "description": "At least One Primary Maintainer has taken TBD Training on OWASP Top 10 or Equivalent",
@@ -46,8 +21,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openjs-security-program-standards.netlify.app/details/owaspTop10Training",
-    "created_at": "2024-12-07T23:06:38.197Z",
-    "updated_at": "2024-12-07T23:06:38.197Z"
+    "created_at": "2024-12-11T23:03:52.941Z",
+    "updated_at": "2024-12-11T23:03:52.941Z"
   },
   {
     "id": 4,
@@ -71,8 +46,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openjs-security-program-standards.netlify.app/details/npmOrgMFA",
-    "created_at": "2024-12-07T23:06:38.197Z",
-    "updated_at": "2024-12-07T23:06:38.197Z"
+    "created_at": "2024-12-11T23:03:52.941Z",
+    "updated_at": "2024-12-11T23:03:52.941Z"
   },
   {
     "id": 5,
@@ -96,8 +71,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openjs-security-program-standards.netlify.app/details/orgToolingMFA",
-    "created_at": "2024-12-07T23:06:38.197Z",
-    "updated_at": "2024-12-07T23:06:38.197Z"
+    "created_at": "2024-12-11T23:03:52.941Z",
+    "updated_at": "2024-12-11T23:03:52.941Z"
   },
   {
     "id": 6,
@@ -121,8 +96,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openjs-security-program-standards.netlify.app/details/MFAImpersonationDefense",
-    "created_at": "2024-12-07T23:06:38.197Z",
-    "updated_at": "2024-12-07T23:06:38.197Z"
+    "created_at": "2024-12-11T23:03:52.941Z",
+    "updated_at": "2024-12-11T23:03:52.941Z"
   },
   {
     "id": 7,
@@ -146,8 +121,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openjs-security-program-standards.netlify.app/details/noSensitiveInfoInRepositories",
-    "created_at": "2024-12-07T23:06:38.197Z",
-    "updated_at": "2024-12-07T23:06:38.197Z"
+    "created_at": "2024-12-11T23:03:52.941Z",
+    "updated_at": "2024-12-11T23:03:52.941Z"
   },
   {
     "id": 8,
@@ -171,8 +146,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openjs-security-program-standards.netlify.app/details/injectedSecretsAtRuntime",
-    "created_at": "2024-12-07T23:06:38.197Z",
-    "updated_at": "2024-12-07T23:06:38.197Z"
+    "created_at": "2024-12-11T23:03:52.941Z",
+    "updated_at": "2024-12-11T23:03:52.941Z"
   },
   {
     "id": 9,
@@ -196,8 +171,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openjs-security-program-standards.netlify.app/details/scanCommitsForSensitiveInfo",
-    "created_at": "2024-12-07T23:06:38.197Z",
-    "updated_at": "2024-12-07T23:06:38.197Z"
+    "created_at": "2024-12-11T23:03:52.941Z",
+    "updated_at": "2024-12-11T23:03:52.941Z"
   },
   {
     "id": 10,
@@ -221,8 +196,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openjs-security-program-standards.netlify.app/details/preventLandingSensitiveCommits",
-    "created_at": "2024-12-07T23:06:38.197Z",
-    "updated_at": "2024-12-07T23:06:38.197Z"
+    "created_at": "2024-12-11T23:03:52.941Z",
+    "updated_at": "2024-12-11T23:03:52.941Z"
   },
   {
     "id": 11,
@@ -246,8 +221,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openjs-security-program-standards.netlify.app/details/SSHKeysRequired",
-    "created_at": "2024-12-07T23:06:38.197Z",
-    "updated_at": "2024-12-07T23:06:38.197Z"
+    "created_at": "2024-12-11T23:03:52.941Z",
+    "updated_at": "2024-12-11T23:03:52.941Z"
   },
   {
     "id": 12,
@@ -271,8 +246,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openjs-security-program-standards.netlify.app/details/npmPublicationMFA",
-    "created_at": "2024-12-07T23:06:38.197Z",
-    "updated_at": "2024-12-07T23:06:38.197Z"
+    "created_at": "2024-12-11T23:03:52.941Z",
+    "updated_at": "2024-12-11T23:03:52.941Z"
   },
   {
     "id": 13,
@@ -296,8 +271,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openjs-security-program-standards.netlify.app/details/githubWebhookSecrets",
-    "created_at": "2024-12-07T23:06:38.197Z",
-    "updated_at": "2024-12-07T23:06:38.197Z"
+    "created_at": "2024-12-11T23:03:52.941Z",
+    "updated_at": "2024-12-11T23:03:52.941Z"
   },
   {
     "id": 14,
@@ -321,8 +296,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openjs-security-program-standards.netlify.app/details/restrictedOrgPermissions",
-    "created_at": "2024-12-07T23:06:38.197Z",
-    "updated_at": "2024-12-07T23:06:38.197Z"
+    "created_at": "2024-12-11T23:03:52.941Z",
+    "updated_at": "2024-12-11T23:03:52.941Z"
   },
   {
     "id": 15,
@@ -346,8 +321,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openjs-security-program-standards.netlify.app/details/adminRepoCreationOnly",
-    "created_at": "2024-12-07T23:06:38.197Z",
-    "updated_at": "2024-12-07T23:06:38.197Z"
+    "created_at": "2024-12-11T23:03:52.941Z",
+    "updated_at": "2024-12-11T23:03:52.941Z"
   },
   {
     "id": 16,
@@ -371,8 +346,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openjs-security-program-standards.netlify.app/details/preventBranchProtectionBypass",
-    "created_at": "2024-12-07T23:06:38.197Z",
-    "updated_at": "2024-12-07T23:06:38.197Z"
+    "created_at": "2024-12-11T23:03:52.941Z",
+    "updated_at": "2024-12-11T23:03:52.941Z"
   },
   {
     "id": 17,
@@ -396,8 +371,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openjs-security-program-standards.netlify.app/details/defineFunctionalRoles",
-    "created_at": "2024-12-07T23:06:38.197Z",
-    "updated_at": "2024-12-07T23:06:38.197Z"
+    "created_at": "2024-12-11T23:03:52.941Z",
+    "updated_at": "2024-12-11T23:03:52.941Z"
   },
   {
     "id": 18,
@@ -421,8 +396,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openjs-security-program-standards.netlify.app/details/githubWriteAccessRoles",
-    "created_at": "2024-12-07T23:06:38.197Z",
-    "updated_at": "2024-12-07T23:06:38.197Z"
+    "created_at": "2024-12-11T23:03:52.941Z",
+    "updated_at": "2024-12-11T23:03:52.941Z"
   },
   {
     "id": 19,
@@ -446,8 +421,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openjs-security-program-standards.netlify.app/details/twoOrMoreOwnersForAccess",
-    "created_at": "2024-12-07T23:06:38.197Z",
-    "updated_at": "2024-12-07T23:06:38.197Z"
+    "created_at": "2024-12-11T23:03:52.941Z",
+    "updated_at": "2024-12-11T23:03:52.941Z"
   },
   {
     "id": 20,
@@ -471,8 +446,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openjs-security-program-standards.netlify.app/details/patchCriticalVulns30Days",
-    "created_at": "2024-12-07T23:06:38.197Z",
-    "updated_at": "2024-12-07T23:06:38.197Z"
+    "created_at": "2024-12-11T23:03:52.941Z",
+    "updated_at": "2024-12-11T23:03:52.941Z"
   },
   {
     "id": 21,
@@ -496,8 +471,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openjs-security-program-standards.netlify.app/details/patchNonCriticalVulns90Days",
-    "created_at": "2024-12-07T23:06:38.197Z",
-    "updated_at": "2024-12-07T23:06:38.197Z"
+    "created_at": "2024-12-11T23:03:52.941Z",
+    "updated_at": "2024-12-11T23:03:52.941Z"
   },
   {
     "id": 22,
@@ -521,8 +496,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openjs-security-program-standards.netlify.app/details/automateVulnDetection",
-    "created_at": "2024-12-07T23:06:38.197Z",
-    "updated_at": "2024-12-07T23:06:38.197Z"
+    "created_at": "2024-12-11T23:03:52.941Z",
+    "updated_at": "2024-12-11T23:03:52.941Z"
   },
   {
     "id": 23,
@@ -546,8 +521,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openjs-security-program-standards.netlify.app/details/staticCodeAnalysis",
-    "created_at": "2024-12-07T23:06:38.197Z",
-    "updated_at": "2024-12-07T23:06:38.197Z"
+    "created_at": "2024-12-11T23:03:52.941Z",
+    "updated_at": "2024-12-11T23:03:52.941Z"
   },
   {
     "id": 24,
@@ -571,8 +546,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openjs-security-program-standards.netlify.app/details/resolveLinterWarnings",
-    "created_at": "2024-12-07T23:06:38.197Z",
-    "updated_at": "2024-12-07T23:06:38.197Z"
+    "created_at": "2024-12-11T23:03:52.941Z",
+    "updated_at": "2024-12-11T23:03:52.941Z"
   },
   {
     "id": 25,
@@ -596,8 +571,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openjs-security-program-standards.netlify.app/details/staticAppSecTesting",
-    "created_at": "2024-12-07T23:06:38.197Z",
-    "updated_at": "2024-12-07T23:06:38.197Z"
+    "created_at": "2024-12-11T23:03:52.941Z",
+    "updated_at": "2024-12-11T23:03:52.941Z"
   },
   {
     "id": 26,
@@ -621,8 +596,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openjs-security-program-standards.netlify.app/details/commitStatusChecks",
-    "created_at": "2024-12-07T23:06:38.197Z",
-    "updated_at": "2024-12-07T23:06:38.197Z"
+    "created_at": "2024-12-11T23:03:52.941Z",
+    "updated_at": "2024-12-11T23:03:52.941Z"
   },
   {
     "id": 27,
@@ -646,8 +621,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openjs-security-program-standards.netlify.app/details/securityMdMeetsOpenJSCVD",
-    "created_at": "2024-12-07T23:06:38.197Z",
-    "updated_at": "2024-12-07T23:06:38.197Z"
+    "created_at": "2024-12-11T23:03:52.941Z",
+    "updated_at": "2024-12-11T23:03:52.941Z"
   },
   {
     "id": 28,
@@ -671,8 +646,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openjs-security-program-standards.netlify.app/details/useCVDToolForVulns",
-    "created_at": "2024-12-07T23:06:38.197Z",
-    "updated_at": "2024-12-07T23:06:38.197Z"
+    "created_at": "2024-12-11T23:03:52.941Z",
+    "updated_at": "2024-12-11T23:03:52.941Z"
   },
   {
     "id": 29,
@@ -696,8 +671,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openjs-security-program-standards.netlify.app/details/vulnResponse14Days",
-    "created_at": "2024-12-07T23:06:38.197Z",
-    "updated_at": "2024-12-07T23:06:38.197Z"
+    "created_at": "2024-12-11T23:03:52.941Z",
+    "updated_at": "2024-12-11T23:03:52.941Z"
   },
   {
     "id": 30,
@@ -721,8 +696,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openjs-security-program-standards.netlify.app/details/incidentResponsePlan",
-    "created_at": "2024-12-07T23:06:38.197Z",
-    "updated_at": "2024-12-07T23:06:38.197Z"
+    "created_at": "2024-12-11T23:03:52.941Z",
+    "updated_at": "2024-12-11T23:03:52.941Z"
   },
   {
     "id": 31,
@@ -746,8 +721,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openjs-security-program-standards.netlify.app/details/assignCVEForKnownVulns",
-    "created_at": "2024-12-07T23:06:38.197Z",
-    "updated_at": "2024-12-07T23:06:38.197Z"
+    "created_at": "2024-12-11T23:03:52.941Z",
+    "updated_at": "2024-12-11T23:03:52.941Z"
   },
   {
     "id": 32,
@@ -771,8 +746,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openjs-security-program-standards.netlify.app/details/includeCVEInReleaseNotes",
-    "created_at": "2024-12-07T23:06:38.197Z",
-    "updated_at": "2024-12-07T23:06:38.197Z"
+    "created_at": "2024-12-11T23:03:52.941Z",
+    "updated_at": "2024-12-11T23:03:52.941Z"
   },
   {
     "id": 33,
@@ -796,8 +771,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openjs-security-program-standards.netlify.app/details/regressionTestsForVulns",
-    "created_at": "2024-12-07T23:06:38.197Z",
-    "updated_at": "2024-12-07T23:06:38.197Z"
+    "created_at": "2024-12-11T23:03:52.941Z",
+    "updated_at": "2024-12-11T23:03:52.941Z"
   },
   {
     "id": 34,
@@ -821,8 +796,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openjs-security-program-standards.netlify.app/details/defaultTokenPermissionsReadOnly",
-    "created_at": "2024-12-07T23:06:38.197Z",
-    "updated_at": "2024-12-07T23:06:38.197Z"
+    "created_at": "2024-12-11T23:03:52.941Z",
+    "updated_at": "2024-12-11T23:03:52.941Z"
   },
   {
     "id": 35,
@@ -846,8 +821,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openjs-security-program-standards.netlify.app/details/blockWorkflowPRApproval",
-    "created_at": "2024-12-07T23:06:38.197Z",
-    "updated_at": "2024-12-07T23:06:38.197Z"
+    "created_at": "2024-12-11T23:03:52.941Z",
+    "updated_at": "2024-12-11T23:03:52.941Z"
   },
   {
     "id": 36,
@@ -871,8 +846,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openjs-security-program-standards.netlify.app/details/noForcePushDefaultBranch",
-    "created_at": "2024-12-07T23:06:38.197Z",
-    "updated_at": "2024-12-07T23:06:38.197Z"
+    "created_at": "2024-12-11T23:03:52.941Z",
+    "updated_at": "2024-12-11T23:03:52.941Z"
   },
   {
     "id": 37,
@@ -896,8 +871,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openjs-security-program-standards.netlify.app/details/preventDeletionDefaultBranch",
-    "created_at": "2024-12-07T23:06:38.197Z",
-    "updated_at": "2024-12-07T23:06:38.197Z"
+    "created_at": "2024-12-11T23:03:52.941Z",
+    "updated_at": "2024-12-11T23:03:52.941Z"
   },
   {
     "id": 38,
@@ -921,8 +896,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openjs-security-program-standards.netlify.app/details/upToDateDefaultBranchBeforeMerge",
-    "created_at": "2024-12-07T23:06:38.197Z",
-    "updated_at": "2024-12-07T23:06:38.197Z"
+    "created_at": "2024-12-11T23:03:52.941Z",
+    "updated_at": "2024-12-11T23:03:52.941Z"
   },
   {
     "id": 39,
@@ -946,8 +921,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openjs-security-program-standards.netlify.app/details/restrictOrgSecrets",
-    "created_at": "2024-12-07T23:06:38.197Z",
-    "updated_at": "2024-12-07T23:06:38.197Z"
+    "created_at": "2024-12-11T23:03:52.941Z",
+    "updated_at": "2024-12-11T23:03:52.941Z"
   },
   {
     "id": 40,
@@ -971,8 +946,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openjs-security-program-standards.netlify.app/details/verifiedActionsOnly",
-    "created_at": "2024-12-07T23:06:38.197Z",
-    "updated_at": "2024-12-07T23:06:38.197Z"
+    "created_at": "2024-12-11T23:03:52.941Z",
+    "updated_at": "2024-12-11T23:03:52.941Z"
   },
   {
     "id": 41,
@@ -996,8 +971,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openjs-security-program-standards.netlify.app/details/noSelfHostedRunners",
-    "created_at": "2024-12-07T23:06:38.197Z",
-    "updated_at": "2024-12-07T23:06:38.197Z"
+    "created_at": "2024-12-11T23:03:52.941Z",
+    "updated_at": "2024-12-11T23:03:52.941Z"
   },
   {
     "id": 42,
@@ -1021,8 +996,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openjs-security-program-standards.netlify.app/details/noArbitraryCodeInPipeline",
-    "created_at": "2024-12-07T23:06:38.197Z",
-    "updated_at": "2024-12-07T23:06:38.197Z"
+    "created_at": "2024-12-11T23:03:52.941Z",
+    "updated_at": "2024-12-11T23:03:52.941Z"
   },
   {
     "id": 43,
@@ -1046,8 +1021,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openjs-security-program-standards.netlify.app/details/limitWorkflowWritePermissions",
-    "created_at": "2024-12-07T23:06:38.197Z",
-    "updated_at": "2024-12-07T23:06:38.197Z"
+    "created_at": "2024-12-11T23:03:52.941Z",
+    "updated_at": "2024-12-11T23:03:52.941Z"
   },
   {
     "id": 44,
@@ -1071,8 +1046,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openjs-security-program-standards.netlify.app/details/preventScriptInjection",
-    "created_at": "2024-12-07T23:06:38.197Z",
-    "updated_at": "2024-12-07T23:06:38.197Z"
+    "created_at": "2024-12-11T23:03:52.941Z",
+    "updated_at": "2024-12-11T23:03:52.941Z"
   },
   {
     "id": 45,
@@ -1096,8 +1071,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openjs-security-program-standards.netlify.app/details/consistentBuildProcessDocs",
-    "created_at": "2024-12-07T23:06:38.197Z",
-    "updated_at": "2024-12-07T23:06:38.197Z"
+    "created_at": "2024-12-11T23:03:52.941Z",
+    "updated_at": "2024-12-11T23:03:52.941Z"
   },
   {
     "id": 46,
@@ -1121,8 +1096,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openjs-security-program-standards.netlify.app/details/upgradePathDocs",
-    "created_at": "2024-12-07T23:06:38.197Z",
-    "updated_at": "2024-12-07T23:06:38.197Z"
+    "created_at": "2024-12-11T23:03:52.941Z",
+    "updated_at": "2024-12-11T23:03:52.941Z"
   },
   {
     "id": 47,
@@ -1146,8 +1121,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openjs-security-program-standards.netlify.app/details/softwareArchitectureDocs",
-    "created_at": "2024-12-07T23:06:38.197Z",
-    "updated_at": "2024-12-07T23:06:38.197Z"
+    "created_at": "2024-12-11T23:03:52.941Z",
+    "updated_at": "2024-12-11T23:03:52.941Z"
   },
   {
     "id": 48,
@@ -1171,8 +1146,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openjs-security-program-standards.netlify.app/details/ciAndCdPipelineAsCode",
-    "created_at": "2024-12-07T23:06:38.197Z",
-    "updated_at": "2024-12-07T23:06:38.197Z"
+    "created_at": "2024-12-11T23:03:52.941Z",
+    "updated_at": "2024-12-11T23:03:52.941Z"
   },
   {
     "id": 49,
@@ -1196,8 +1171,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openjs-security-program-standards.netlify.app/details/pinActionsToSHA",
-    "created_at": "2024-12-07T23:06:38.197Z",
-    "updated_at": "2024-12-07T23:06:38.197Z"
+    "created_at": "2024-12-11T23:03:52.941Z",
+    "updated_at": "2024-12-11T23:03:52.941Z"
   },
   {
     "id": 50,
@@ -1221,8 +1196,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openjs-security-program-standards.netlify.app/details/automateDependencyManagement",
-    "created_at": "2024-12-07T23:06:38.197Z",
-    "updated_at": "2024-12-07T23:06:38.197Z"
+    "created_at": "2024-12-11T23:03:52.941Z",
+    "updated_at": "2024-12-11T23:03:52.941Z"
   },
   {
     "id": 51,
@@ -1246,8 +1221,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openjs-security-program-standards.netlify.app/details/machineReadableDependencies",
-    "created_at": "2024-12-07T23:06:38.197Z",
-    "updated_at": "2024-12-07T23:06:38.197Z"
+    "created_at": "2024-12-11T23:03:52.941Z",
+    "updated_at": "2024-12-11T23:03:52.941Z"
   },
   {
     "id": 52,
@@ -1271,8 +1246,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openjs-security-program-standards.netlify.app/details/identifyModifiedDependencies",
-    "created_at": "2024-12-07T23:06:38.197Z",
-    "updated_at": "2024-12-07T23:06:38.197Z"
+    "created_at": "2024-12-11T23:03:52.941Z",
+    "updated_at": "2024-12-11T23:03:52.941Z"
   },
   {
     "id": 53,
@@ -1296,8 +1271,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openjs-security-program-standards.netlify.app/details/annualDependencyRefresh",
-    "created_at": "2024-12-07T23:06:38.197Z",
-    "updated_at": "2024-12-07T23:06:38.197Z"
+    "created_at": "2024-12-11T23:03:52.941Z",
+    "updated_at": "2024-12-11T23:03:52.941Z"
   },
   {
     "id": 54,
@@ -1321,8 +1296,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openjs-security-program-standards.netlify.app/details/useHwKeyGithubAccess",
-    "created_at": "2024-12-07T23:06:38.197Z",
-    "updated_at": "2024-12-07T23:06:38.197Z"
+    "created_at": "2024-12-11T23:03:52.941Z",
+    "updated_at": "2024-12-11T23:03:52.941Z"
   },
   {
     "id": 55,
@@ -1346,8 +1321,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openjs-security-program-standards.netlify.app/details/useHwKeyGithubNonInteractive",
-    "created_at": "2024-12-07T23:06:38.197Z",
-    "updated_at": "2024-12-07T23:06:38.197Z"
+    "created_at": "2024-12-11T23:03:52.941Z",
+    "updated_at": "2024-12-11T23:03:52.941Z"
   },
   {
     "id": 56,
@@ -1371,8 +1346,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openjs-security-program-standards.netlify.app/details/useHwKeyOtherContexts",
-    "created_at": "2024-12-07T23:06:38.197Z",
-    "updated_at": "2024-12-07T23:06:38.197Z"
+    "created_at": "2024-12-11T23:03:52.941Z",
+    "updated_at": "2024-12-11T23:03:52.941Z"
   },
   {
     "id": 57,
@@ -1396,8 +1371,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openjs-security-program-standards.netlify.app/details/forkWorkflowApproval",
-    "created_at": "2024-12-07T23:06:38.197Z",
-    "updated_at": "2024-12-07T23:06:38.197Z"
+    "created_at": "2024-12-11T23:03:52.941Z",
+    "updated_at": "2024-12-11T23:03:52.941Z"
   },
   {
     "id": 58,
@@ -1421,8 +1396,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openjs-security-program-standards.netlify.app/details/workflowSecurityScanner",
-    "created_at": "2024-12-07T23:06:38.197Z",
-    "updated_at": "2024-12-07T23:06:38.197Z"
+    "created_at": "2024-12-11T23:03:52.941Z",
+    "updated_at": "2024-12-11T23:03:52.941Z"
   },
   {
     "id": 59,
@@ -1446,8 +1421,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openjs-security-program-standards.netlify.app/details/runnerSecurityScanner",
-    "created_at": "2024-12-07T23:06:38.197Z",
-    "updated_at": "2024-12-07T23:06:38.197Z"
+    "created_at": "2024-12-11T23:03:52.941Z",
+    "updated_at": "2024-12-11T23:03:52.941Z"
   },
   {
     "id": 60,
@@ -1471,8 +1446,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openjs-security-program-standards.netlify.app/details/activeAdminsSixMonths",
-    "created_at": "2024-12-07T23:06:38.197Z",
-    "updated_at": "2024-12-07T23:06:38.197Z"
+    "created_at": "2024-12-11T23:03:52.941Z",
+    "updated_at": "2024-12-11T23:03:52.941Z"
   },
   {
     "id": 61,
@@ -1496,8 +1471,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openjs-security-program-standards.netlify.app/details/activeWritersSixMonths",
-    "created_at": "2024-12-07T23:06:38.197Z",
-    "updated_at": "2024-12-07T23:06:38.197Z"
+    "created_at": "2024-12-11T23:03:52.941Z",
+    "updated_at": "2024-12-11T23:03:52.941Z"
   },
   {
     "id": 62,
@@ -1521,8 +1496,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openjs-security-program-standards.netlify.app/details/PRsBeforeMerge",
-    "created_at": "2024-12-07T23:06:38.197Z",
-    "updated_at": "2024-12-07T23:06:38.197Z"
+    "created_at": "2024-12-11T23:03:52.941Z",
+    "updated_at": "2024-12-11T23:03:52.941Z"
   },
   {
     "id": 63,
@@ -1546,8 +1521,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openjs-security-program-standards.netlify.app/details/commitSignoffForWeb",
-    "created_at": "2024-12-07T23:06:38.197Z",
-    "updated_at": "2024-12-07T23:06:38.197Z"
+    "created_at": "2024-12-11T23:03:52.941Z",
+    "updated_at": "2024-12-11T23:03:52.941Z"
   },
   {
     "id": 64,
@@ -1571,8 +1546,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openjs-security-program-standards.netlify.app/details/requireSignedCommits",
-    "created_at": "2024-12-07T23:06:38.197Z",
-    "updated_at": "2024-12-07T23:06:38.197Z"
+    "created_at": "2024-12-11T23:03:52.941Z",
+    "updated_at": "2024-12-11T23:03:52.941Z"
   },
   {
     "id": 65,
@@ -1596,8 +1571,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openjs-security-program-standards.netlify.app/details/includePackageLock",
-    "created_at": "2024-12-07T23:06:38.197Z",
-    "updated_at": "2024-12-07T23:06:38.197Z"
+    "created_at": "2024-12-11T23:03:52.941Z",
+    "updated_at": "2024-12-11T23:03:52.941Z"
   },
   {
     "id": 66,
@@ -1621,8 +1596,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openjs-security-program-standards.netlify.app/details/requireTwoPartyReview",
-    "created_at": "2024-12-07T23:06:38.197Z",
-    "updated_at": "2024-12-07T23:06:38.197Z"
+    "created_at": "2024-12-11T23:03:52.941Z",
+    "updated_at": "2024-12-11T23:03:52.941Z"
   },
   {
     "id": 67,
@@ -1646,8 +1621,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openjs-security-program-standards.netlify.app/details/requireCodeOwnersReviewForLargeTeams",
-    "created_at": "2024-12-07T23:06:38.197Z",
-    "updated_at": "2024-12-07T23:06:38.197Z"
+    "created_at": "2024-12-11T23:03:52.941Z",
+    "updated_at": "2024-12-11T23:03:52.941Z"
   },
   {
     "id": 68,
@@ -1671,8 +1646,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openjs-security-program-standards.netlify.app/details/requirePRApprovalForMainline",
-    "created_at": "2024-12-07T23:06:38.197Z",
-    "updated_at": "2024-12-07T23:06:38.197Z"
+    "created_at": "2024-12-11T23:03:52.941Z",
+    "updated_at": "2024-12-11T23:03:52.941Z"
   },
   {
     "id": 69,
@@ -1696,8 +1671,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openjs-security-program-standards.netlify.app/details/limitOrgOwners",
-    "created_at": "2024-12-07T23:06:38.197Z",
-    "updated_at": "2024-12-07T23:06:38.197Z"
+    "created_at": "2024-12-11T23:03:52.941Z",
+    "updated_at": "2024-12-11T23:03:52.941Z"
   },
   {
     "id": 70,
@@ -1721,8 +1696,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openjs-security-program-standards.netlify.app/details/limitRepoAdmins",
-    "created_at": "2024-12-07T23:06:38.197Z",
-    "updated_at": "2024-12-07T23:06:38.197Z"
+    "created_at": "2024-12-11T23:03:52.941Z",
+    "updated_at": "2024-12-11T23:03:52.941Z"
   },
   {
     "id": 71,
@@ -1746,8 +1721,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openjs-security-program-standards.netlify.app/details/patchExploitableHighVulns14Days",
-    "created_at": "2024-12-07T23:06:38.197Z",
-    "updated_at": "2024-12-07T23:06:38.197Z"
+    "created_at": "2024-12-11T23:03:52.941Z",
+    "updated_at": "2024-12-11T23:03:52.941Z"
   },
   {
     "id": 72,
@@ -1771,8 +1746,8 @@
     "implementation_type": null,
     "implementation_details_reference": null,
     "details_url": "https://openjs-security-program-standards.netlify.app/details/patchExploitableNoncCriticalVulns60Days",
-    "created_at": "2024-12-07T23:06:38.197Z",
-    "updated_at": "2024-12-07T23:06:38.197Z"
+    "created_at": "2024-12-11T23:03:52.941Z",
+    "updated_at": "2024-12-11T23:03:52.941Z"
   },
   {
     "id": 3,
@@ -1796,7 +1771,32 @@
     "implementation_type": "computed",
     "implementation_details_reference": "https://github.com/secure-dashboards/openjs-foundation-dashboard/issues/43",
     "details_url": "https://openjs-security-program-standards.netlify.app/details/githubOrgMFA",
-    "created_at": "2024-12-07T23:06:38.197Z",
-    "updated_at": "2024-12-07T23:06:38.197Z"
+    "created_at": "2024-12-11T23:03:52.941Z",
+    "updated_at": "2024-12-11T23:03:52.941Z"
+  },
+  {
+    "id": 1,
+    "title": "Training on Secure Software Design",
+    "description": "At least One Primary Maintainer has taken TBD Training on Secure Software Design",
+    "section_number": "7",
+    "section_name": "code quality",
+    "code_name": "softwareDesignTraining",
+    "priority_group": "P0",
+    "is_c_scrm": false,
+    "level_incubating_status": "expected",
+    "level_active_status": "expected",
+    "level_retiring_status": "expected",
+    "mitre_url": "https://attack.mitre.org/mitigations/M1013/",
+    "mitre_description": "M1013",
+    "how_to_url": null,
+    "how_to_description": null,
+    "sources_url": "https://www.bestpractices.dev/en/criteria?details=true&rationale=true#0.know_secure_design",
+    "sources_description": "OpenSSF Best Practices Badge Passing Level [know_secure_design]",
+    "implementation_status": "completed",
+    "implementation_type": "manual",
+    "implementation_details_reference": "https://github.com/secure-dashboards/openjs-foundation-dashboard/issues/52",
+    "details_url": "https://openjs-security-program-standards.netlify.app/details/softwareDesignTraining",
+    "created_at": "2024-12-11T23:03:52.941Z",
+    "updated_at": "2024-12-11T23:03:52.941Z"
   }
 ]
