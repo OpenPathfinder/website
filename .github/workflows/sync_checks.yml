@@ -40,7 +40,7 @@ jobs:
 
       - name: Clone OpenJS Foundation Dashboard
         run: |
-          git clone https://github.com/secure-dashboards/openjs-foundation-dashboard.git temp-openjs-dashboard
+          git clone https://github.com/OpenPathfinder/visionBoard.git temp-openjs-dashboard
           cd temp-openjs-dashboard
           npm install
           npm run db:migrate

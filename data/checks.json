@@ -1769,7 +1769,7 @@
     "sources_description": "OpenSSF SCM Best PracticesOpenSSF Best Practices Badge Gold Level [require_2FA]",
     "implementation_status": "completed",
     "implementation_type": "computed",
-    "implementation_details_reference": "https://github.com/secure-dashboards/openjs-foundation-dashboard/issues/43",
+    "implementation_details_reference": "https://github.com/OpenPathfinder/visionBoard/issues/43",
     "details_url": "https://openjs-security-program-standards.netlify.app/details/githubOrgMFA",
     "created_at": "2024-12-11T23:03:52.941Z",
     "updated_at": "2024-12-11T23:03:52.941Z"
@@ -1794,7 +1794,7 @@
     "sources_description": "OpenSSF Best Practices Badge Passing Level [know_secure_design]",
     "implementation_status": "completed",
     "implementation_type": "manual",
-    "implementation_details_reference": "https://github.com/secure-dashboards/openjs-foundation-dashboard/issues/52",
+    "implementation_details_reference": "https://github.com/OpenPathfinder/visionBoard/issues/52",
     "details_url": "https://openjs-security-program-standards.netlify.app/details/softwareDesignTraining",
     "created_at": "2024-12-11T23:03:52.941Z",
     "updated_at": "2024-12-11T23:03:52.941Z"
