@@ -19,12 +19,12 @@ jobs:
         image: postgres:17.2
         env:
           POSTGRES_DB: dashboard
-          POSTGRES_USER: openjs
+          POSTGRES_USER: visionBoard
           POSTGRES_PASSWORD: password
         ports:
           - 5432:5432
         options: >-
-          --health-cmd="pg_isready -U openjs"
+          --health-cmd="pg_isready -U visionBoard"
           --health-interval=10s
           --health-timeout=5s
           --health-retries=5
@@ -38,20 +38,20 @@ jobs:
           git fetch origin chore/update-content || true
           git checkout chore/update-content || git checkout -b chore/update-content
 
-      - name: Clone OpenJS Foundation Dashboard
+      - name: Clone visionBoard and import checks
         run: |
-          git clone https://github.com/OpenPathfinder/visionBoard.git temp-openjs-dashboard
-          cd temp-openjs-dashboard
+          git clone https://github.com/OpenPathfinder/visionBoard.git temp-visionBoard
+          cd temp-visionBoard
           npm install
           npm run db:migrate
           mkdir -p output
           npm run db:export-checks
           cp output/checks.json ../data/checks.json
           cd ..
-          rm -rf temp-openjs-dashboard
+          rm -rf temp-visionBoard
         env:
           PGHOST: localhost
-          PGUSER: openjs
+          PGUSER: visionBoard
           PGPASSWORD: password
           PGDATABASE: dashboard
 
@@ -65,7 +65,7 @@ jobs:
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
           git add -A
-          git diff --cached --quiet || git commit -m "chore: sync with OpenJS Foundation Dashboard"
+          git diff --cached --quiet || git commit -m "chore: sync with visionBoard Checks"
 
       - name: Install Dependencies and update dynamic content
         run: |
