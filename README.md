@@ -1,3 +1,5 @@
+**:warning: This repo is archived now, please use [OpenPathfinder](https://openpathfinder.com/docs/getting-started). All the information has been transfered to the new website :warning:**
+
 # OpenJS Security Program Standards
 
 This repo contains the source code and infra used to build and the deploy the website: https://openjs-security-program-standards.netlify.app/.
